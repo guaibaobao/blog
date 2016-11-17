@@ -4,26 +4,44 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>jQuery | guaibaobao&#39;s blog</title>
+    <title>javaScript版块 | guaibaobao&#39;s blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="baobao">
     
 
     
-    <meta name="description" content="title: jQuery—Ajax一些jQuery跨域请求问题：get,post等几种方式和具体参数
-总结jQuery.postjQuery.post(url,[data],[callback],[type]) : 使用POST方式来进行异步请求。    url(String): 发送请求的URL地址。    data(Map):可选，要发送给服务器的数据，以Keyvalue的键值对形式表示。">
+    <meta name="description" content="##谈谈javaScript的一些总结.DTD:文档类型定义（DTD：Document Type Definition）可定义合法的XML文档构建模块。（了解）
+##javaScript版块
+
+JS的简介：
+JavaScript 是脚本语言
+JavaScript 是一种轻量级的编程语言。
+JavaScript 是可插入 HTML 页面的编程代码。
+JavaScript 插入 HTML 页面后，可由">
 <meta property="og:type" content="article">
-<meta property="og:title" content="jQuery">
-<meta property="og:url" content="http://yoursite.com/2016/10/02/jQuery/index.html">
+<meta property="og:title" content="javaScript版块">
+<meta property="og:url" content="http://yoursite.com/2016/11/13/javaScript版块/index.html">
 <meta property="og:site_name" content="guaibaobao's blog">
-<meta property="og:description" content="title: jQuery—Ajax一些jQuery跨域请求问题：get,post等几种方式和具体参数
-总结jQuery.postjQuery.post(url,[data],[callback],[type]) : 使用POST方式来进行异步请求。    url(String): 发送请求的URL地址。    data(Map):可选，要发送给服务器的数据，以Keyvalue的键值对形式表示。">
-<meta property="og:updated_time" content="2016-11-17T02:52:34.778Z">
+<meta property="og:description" content="##谈谈javaScript的一些总结.DTD:文档类型定义（DTD：Document Type Definition）可定义合法的XML文档构建模块。（了解）
+##javaScript版块
+
+JS的简介：
+JavaScript 是脚本语言
+JavaScript 是一种轻量级的编程语言。
+JavaScript 是可插入 HTML 页面的编程代码。
+JavaScript 插入 HTML 页面后，可由">
+<meta property="og:updated_time" content="2016-11-17T13:51:19.312Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="jQuery">
-<meta name="twitter:description" content="title: jQuery—Ajax一些jQuery跨域请求问题：get,post等几种方式和具体参数
-总结jQuery.postjQuery.post(url,[data],[callback],[type]) : 使用POST方式来进行异步请求。    url(String): 发送请求的URL地址。    data(Map):可选，要发送给服务器的数据，以Keyvalue的键值对形式表示。">
+<meta name="twitter:title" content="javaScript版块">
+<meta name="twitter:description" content="##谈谈javaScript的一些总结.DTD:文档类型定义（DTD：Document Type Definition）可定义合法的XML文档构建模块。（了解）
+##javaScript版块
+
+JS的简介：
+JavaScript 是脚本语言
+JavaScript 是一种轻量级的编程语言。
+JavaScript 是可插入 HTML 页面的编程代码。
+JavaScript 插入 HTML 页面后，可由">
 
     
     <link rel="alternative" href="/atom.xml" title="guaibaobao&#39;s blog" type="application/atom+xml">
@@ -83,14 +101,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/blog/2016/10/02/jQuery/" title="jQuery" itemprop="url">jQuery</a>
+      <a href="/blog/2016/11/13/javaScript版块/" title="javaScript版块" itemprop="url">javaScript版块</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/blog/about" title="baobao" target="_blank" itemprop="author">baobao</a>
 		
   <p class="article-time">
-    <time datetime="2016-10-02T02:51:36.000Z" itemprop="datePublished"> 发表于 2016-10-02</time>
+    <time datetime="2016-11-13T15:49:55.000Z" itemprop="datePublished"> 发表于 2016-11-13</time>
     
   </p>
 </header>
@@ -99,18 +117,139 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#title-jQuery—Ajax"><span class="toc-number">1.</span> <span class="toc-text">title: jQuery—Ajax</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#总结"><span class="toc-number">2.</span> <span class="toc-text">总结</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery-post"><span class="toc-number">2.1.</span> <span class="toc-text">jQuery.post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery-get"><span class="toc-number">2.2.</span> <span class="toc-text">jQuery.get</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#load-url-data-callback-载入远程的HTML文件代码并插入至DOM中"><span class="toc-number">2.3.</span> <span class="toc-text">load(url,[data],[callback]) 载入远程的HTML文件代码并插入至DOM中</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery-getScript-url-callback-通过GET方式请求载入并执行一个JavaScript文件"><span class="toc-number">2.4.</span> <span class="toc-text">jQuery.getScript(url,[callback]) 通过GET方式请求载入并执行一个JavaScript文件</span></a></li></ol></li></ol>
+			
 		
 		</div>
 		
-		<hr>
-<h2 id="title-jQuery—Ajax"><a href="#title-jQuery—Ajax" class="headerlink" title="title: jQuery—Ajax"></a>title: jQuery—Ajax</h2><p>一些jQuery跨域请求问题：get,post等几种方式和具体参数</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><h3 id="jQuery-post"><a href="#jQuery-post" class="headerlink" title="jQuery.post"></a>jQuery.post</h3><p>jQuery.post(url,[data],[callback],[type]) : 使用POST方式来进行异步请求。<br>    url(String): 发送请求的URL地址。<br>    data(Map):可选，要发送给服务器的数据，以Keyvalue的键值对形式表示。<br>    callback（Function）: 可选，载入成功时回调函数（只有当Response的返回状态是success才是调用该方法）。<br>    type(String):可选， 客户端的请求类型说明如JSON ,XML等等</p>
-<h3 id="jQuery-get"><a href="#jQuery-get" class="headerlink" title="jQuery.get"></a>jQuery.get</h3><p>jQuery.get(url,[data],[callback]) 使用GET方式来进行异步请求<br>    url(String): 发送请求的URL地址<br>    data(Map): 可选，要发送给服务器的数据，以key/value的键值对形式表示，会作为QueryString附加到请求URL中。<br>    callback(Function)：可选，载入成功时回调函数（只有当response的返回状态是success才是调用该方法）</p>
-<h3 id="load-url-data-callback-载入远程的HTML文件代码并插入至DOM中"><a href="#load-url-data-callback-载入远程的HTML文件代码并插入至DOM中" class="headerlink" title="load(url,[data],[callback]) 载入远程的HTML文件代码并插入至DOM中"></a>load(url,[data],[callback]) 载入远程的HTML文件代码并插入至DOM中</h3><pre><code> url (String): 请求的HTML页的URL地址。
-data(Map) : 可选参数，发送至服务器的key/value数据。 无参数 get，有参数 post
-callback(Callback): 可选参数 请求完成时(不需要是success)的回调函数。
-</code></pre><h3 id="jQuery-getScript-url-callback-通过GET方式请求载入并执行一个JavaScript文件"><a href="#jQuery-getScript-url-callback-通过GET方式请求载入并执行一个JavaScript文件" class="headerlink" title="jQuery.getScript(url,[callback]) 通过GET方式请求载入并执行一个JavaScript文件"></a>jQuery.getScript(url,[callback]) 通过GET方式请求载入并执行一个JavaScript文件</h3>  
+		<p>##谈谈javaScript的一些总结<br>.DTD:文档类型定义（DTD：Document Type Definition）可定义合法的XML文档构建模块。（了解）</p>
+<p>##javaScript版块</p>
+<ul>
+<li>JS的简介：<ul>
+<li>JavaScript 是脚本语言</li>
+<li>JavaScript 是一种轻量级的编程语言。</li>
+<li>JavaScript 是可插入 HTML 页面的编程代码。</li>
+<li>JavaScript 插入 HTML 页面后，可由所有的现代浏览器执行。</li>
+</ul>
+</li>
+<li>javascript的数据类型：<ul>
+<li>undefined   boolean   string   number   object   null   function</li>
+</ul>
+</li>
+<li>split  join的区别：<ul>
+<li>split( )把字符串转换成字符串数组</li>
+<li>join( )将数组各个元素通过指定的分隔符连成字符串</li>
+</ul>
+</li>
+<li>数组方法的使用<ul>
+<li>pop( )删除数组的最后一个元素并返回被删除的数组元素的值</li>
+<li>push( )在一个数组的末尾添加一个或多个元素并返回新的数组的长度</li>
+<li>nshift( )在一个数组的首位添加一个或多个元素并返回新的数组长度</li>
+<li>shift( )删除数组的数组的首位元素并且返回被删除数组元素的值</li>
+</ul>
+</li>
+<li>函数对象中的call函数和apply函数的区别<ul>
+<li>call（thisObj，Object） <ul>
+<li>调用一个对象的一个方法，以另一个对象替换当前对象</li>
+</ul>
+</li>
+<li>apply（thisObj，[argArray]）<ul>
+<li>应用某一个对象的一个方法，用另一个对象替换当前对象,die</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Date和Math对象的使用：<ul>
+<li>Date（）返回当前时间日期</li>
+<li>getDate（）返回一个月中的某一天</li>
+<li>getMonth（）返回月份（以数组形式存储返回0或1）</li>
+<li>getFullYear（）返回年</li>
+<li>getHours（）返回小时部分</li>
+<li>getMinutes（）返回分钟部分</li>
+<li>getSecond（）返回秒数</li>
+<li>getDay（）返回一周中的某一天（返回值是0（周日）到6（周六）之间的一个整数）</li>
+</ul>
+</li>
+<li>Math对象：<ul>
+<li>Math.celi（）天花板函数</li>
+<li>Math.floor（）地板函数</li>
+<li>Math .max（x,y）取大值</li>
+<li>Math .min（x,y）取小值</li>
+<li>Math .random（）返回0——1之间的数值，范围【0，1】</li>
+<li>Math .pow（x,y）返回x值的y次方</li>
+<li>Math .round（x）对数字进行四舍五入计算，最后结果为整数</li>
+</ul>
+</li>
+<li>slice（）和splice（）的区别：<ul>
+<li>splice( ) 方法用于插入、删除或替换数组的元素。语法：arrayObject.splice(index,howmany,element1,…..,elementX)【splice() 方法可删除从 index 处开始的零个或多个元素，并且用参数列表中声明的一个或多个值来替换那些被删除的元素。】</li>
+<li>slice() 方法可提取字符串的某个部分，并以新的字符串返回被提取的部分。语法：stringObject.slice(start,end)【slice() 与 substr() 有所不同，因为它用两个字符的位置来指定子串，而 substr() 则用字符位置和长度来指定子串。】</li>
+</ul>
+</li>
+<li>面向对象：（面向对象是为了解决系统的可维护性，可扩展性，可重用性）<ul>
+<li>面向对象的三大特征：<pre><code>* 封装:封装的作用，就解决了程序的可扩展性。
+* 继承：解决了系统的重用性和扩展性，但是继承破坏了封装，因为他是对子类开放的，修改父类会导致所有子类的改变，因此继承一定程度上又破坏了系统的可扩展性，所以继承需要慎用
+* 多态：接口的多种不同的实现方式即为多态。（实现了系统的可维护性，可扩展性。）
+</code></pre></li>
+</ul>
+</li>
+<li>面向对象的编程步骤：<ul>
+<li>首先是分析需求，先不要思考怎么用程序实现它，先分析需求中稳定不变的客体都是些什么，这些客体之间的关系是什么。</li>
+<li>把第一步分析出来的需求，通过进一步扩充模型，变成可实现的、符合成本的、模块化的、低耦合高内聚的模型。</li>
+<li>使用面向对象的实现模型</li>
+</ul>
+</li>
+<li>原型链<ul>
+<li>原型链：当从一个对象那里调取属性或方法时，如果该对象自身不存在这样的属性或方法，就会去自己关联的prototype对象那里寻找，如果prototype没有，就会去prototype关联的前辈prototype那里寻找，如果再没有则继续查找Prototype.Prototype引用的对象，依次类推，直到Prototype.….Prototype为undefined（Object的Prototype就是undefined）从而形成了所谓的“原型链”。</li>
+<li>原型模式的执行流程：<pre><code>* 先查找构造函数实例里的属性或方法，如果有，就立即返回。
+* 如果构造函数的实例没有，就去它的原型对象里找，如果有，就立即返回
+</code></pre></li>
+</ul>
+</li>
+<li>MVC思想的理解：（是框架思想）<ul>
+<li>模型Model()，用于存储程序中使用到的数据;</li>
+<li>视图(View)，用不同的表现形式来呈现数据；</li>
+<li>控制器(Controller)，更新模型。</li>
+</ul>
+</li>
+<li>JS事件：<ul>
+<li>事件捕获阶段：事件从最上一级标签开始往下查找，直到捕获到事件目标(target)【事件冒泡是一个从子节点向祖先节点冒泡的过程】。</li>
+<li>事件冒泡阶段：事件从事件目标(target)开始，往上冒泡直到页面的最上一级标签。【事件捕获刚好相反，是从祖先节点到子节点的过程】<pre><code>* 阻止冒泡、捕获行为   event.stopPropagation( );
+*  阻止浏览器默认行为IE8浏览器： window.event.returnValue= false; 其他浏览器：event.preventDefault( );
+</code></pre></li>
+</ul>
+</li>
+<li>闭包：（本质上，闭包就是将函数内部和函数外部连接起来的一座桥梁。）<ul>
+<li>嵌套函数</li>
+<li>闭包就是能够读取其他函数内部变量的函数</li>
+</ul>
+</li>
+<li>闭包的用途：<ul>
+<li>一个是前面提到的可以读取函数内部的变量，</li>
+<li>另一个就是让这些变量的值始终保持在内存中。</li>
+</ul>
+</li>
+<li>闭包的注意点：<ul>
+<li>由于闭包会使得函数中的变量都被保存在内存中，内存消耗很大，所以不能滥用闭包，否则会造成网页的性能问题，在IE中可能导致内存泄露。解决方法是，在退出函数之前，将不使用的局部变量全部删除。</li>
+<li>闭包会在父函数外部，改变父函数内部变量的值。所以，如果你把父函数当作对象（object）使用，把闭包当作它的公用方法（Public Method），把内部变量当作它的私有属性（private value），这时一定要小心，不要随便 改变父函数内部变量的值。</li>
+</ul>
+</li>
+<li>JSON和XML的区别：<ul>
+<li>相同之处：<pre><code>* 是纯文本
+* 具有“自我描述性”（人类可读）
+* 具有层级结构（值中存在值）
+* 可通过 JavaScript 进行解析
+*  数据可使用 AJAX 进行传输
+</code></pre></li>
+<li>不同之处（JSON与XML的区别）：<pre><code>* 没有结束标签
+* 更短
+* 读写的速度更快
+* 能够使用内建的 JavaScript eval() 方法进行解析
+* 使用数组
+* 不使用保留字
+</code></pre>##未完待续。。。</li>
+</ul>
+</li>
+</ul>
+  
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
@@ -122,7 +261,7 @@ callback(Callback): 可选参数 请求完成时(不需要是success)的回调�
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://yoursite.com/blog/2016/10/02/jQuery/" data-title="jQuery | guaibaobao&#39;s blog" data-tsina="null" class="share clearfix">
+	  <div data-url="http://yoursite.com/blog/2016/11/13/javaScript版块/" data-title="javaScript版块 | guaibaobao&#39;s blog" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -135,19 +274,11 @@ callback(Callback): 可选参数 请求完成时(不需要是success)的回调�
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/blog/2016/10/07/angularjs中的transclude及ng-transclude/" title="angularjs中的transclude及ng-transclude">
-  <strong>上一篇：</strong><br/>
-  <span>
-  angularjs中的transclude及ng-transclude</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/blog/2016/09/29/gulp/"  title="gulp">
+<a href="/blog/2016/11/10/CSS版块/"  title="CSS版块">
  <strong>下一篇：</strong><br/> 
- <span>gulp
+ <span>CSS版块
 </span>
 </a>
 </div>
@@ -162,7 +293,7 @@ callback(Callback): 可选参数 请求完成时(不需要是success)的回调�
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#title-jQuery—Ajax"><span class="toc-number">1.</span> <span class="toc-text">title: jQuery—Ajax</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#总结"><span class="toc-number">2.</span> <span class="toc-text">总结</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery-post"><span class="toc-number">2.1.</span> <span class="toc-text">jQuery.post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery-get"><span class="toc-number">2.2.</span> <span class="toc-text">jQuery.get</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#load-url-data-callback-载入远程的HTML文件代码并插入至DOM中"><span class="toc-number">2.3.</span> <span class="toc-text">load(url,[data],[callback]) 载入远程的HTML文件代码并插入至DOM中</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery-getScript-url-callback-通过GET方式请求载入并执行一个JavaScript文件"><span class="toc-number">2.4.</span> <span class="toc-text">jQuery.getScript(url,[callback]) 通过GET方式请求载入并执行一个JavaScript文件</span></a></li></ol></li></ol>
+ 
  
   </div>
 
