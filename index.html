@@ -92,8 +92,7 @@
     <div class="article-content">
         
         <h1 id="GIT与GitHub以及博客的创建"><a href="#GIT与GitHub以及博客的创建" class="headerlink" title="GIT与GitHub以及博客的创建"></a>GIT与GitHub以及博客的创建</h1><p><strong>GIT</strong>代码管理工具，可将自己本地的代码上传到 GitHub远程仓库中进行保管，个人觉得还是很好用的，毕竟以前的代码管理有点low。</p>
-<p>####一、github远程仓库提交<br>While saving rich HTML content in Evernote, <strong>Marxico</strong> puts the Markdown text in a hidden area of the note, which makes it possible to get the original text in <strong>Marxico</strong> and edit it again. This is a really brilliant design because:</p>
-<ul>
+<h4 id="一、github远程仓库提交"><a href="#一、github远程仓库提交" class="headerlink" title="一、github远程仓库提交"></a>一、github远程仓库提交</h4><ul>
 <li>.建一个项目，在项目中打开命令窗口，输入git init对git进行初始化</li>
 <li>.在项目中添加文件夹（如：css  js 并在文件夹中添加内容main.css  main.js,）输入git status查看git的状态，查看文件夹是否添加，如果没有添加，输入git add . 进行添加</li>
 <li>在命令窗口输入git commit -m “任意内容 “（这是进行日志提交）</li>
@@ -111,12 +110,10 @@
 <li>提交后输入 git log窗口中会显示多次提交的哈希值（哈希值是commit后面的代码）</li>
 <li>在窗口输入git reset –hard +（哈希值）.git中的代码会由哈希值决定</li>
 </ul>
-<p>####四.克隆远程仓库的代码到本地</p>
-<ul>
+<h4 id="四-克隆远程仓库的代码到本地"><a href="#四-克隆远程仓库的代码到本地" class="headerlink" title="四.克隆远程仓库的代码到本地"></a>四.克隆远程仓库的代码到本地</h4><ul>
 <li>在本地文件中打开命令窗口输入git clone +（远程仓库的地址）</li>
 </ul>
-<p>####五. git分支</p>
-<ul>
+<h4 id="五-git分支"><a href="#五-git分支" class="headerlink" title="五. git分支"></a>五. git分支</h4><ul>
 <li>创建新分支：</li>
 <li>在命令窗口输入 git branch 查看仓库分支</li>
 <li>输入 git branch gh-pages 新建分支名</li>
@@ -129,7 +126,8 @@
 <li>新建文件夹右键打开命令窗口   使用npm 安装hexo      输入 npm install -g hexo    </li>
 <li>初始化 hexo     hexo init blog    会自动生成一个blog</li>
 <li>点击blog进入  打开命令窗口在命令窗口输入 hexo generate  生成静态页面  （出现一个public）</li>
-<li>修改   _config.yml   文件  （deploy:<pre><code>type: git
+<li>修改   _config.yml   文件  （<pre><code>deploy:
+type: git
 repository:(用空格键开)网址
 branch: gh-pages
 </code></pre>）</li>
