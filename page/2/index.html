@@ -1,10 +1,10 @@
 
-  <!DOCTYPE HTML>
+ <!DOCTYPE HTML>
 <html >
 <head>
   <meta charset="UTF-8">
   
-    <title>Archives: 2016/11 | guaibaobao&#39;s blog</title>
+    <title>guaibaobao&#39;s blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="baobao">
@@ -13,7 +13,7 @@
     
     <meta property="og:type" content="website">
 <meta property="og:title" content="guaibaobao's blog">
-<meta property="og:url" content="http://yoursite.com/archives/2016/11/index.html">
+<meta property="og:url" content="http://yoursite.com/page/2/index.html">
 <meta property="og:site_name" content="guaibaobao's blog">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="guaibaobao's blog">
@@ -31,9 +31,9 @@
     <link rel="stylesheet" href="/blog/css/style.css">
 </head>
 
-    <body>
-      <header>
-        
+  <body>
+    <header>
+      
 <div>
 		
 			<div id="imglogo">
@@ -68,161 +68,133 @@
 				</ul>
 			</nav>			
 </div>
-      </header>
-      <div id="container">
+    </header>
+    <div id="container">
+      <div id="main">
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/blog/2016/11/16/angularjs中的transclude及ng-transclude指令/" title="transclude及ng-transclude" itemprop="url">transclude及ng-transclude</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/blog/about" title="baobao" target="_blank" itemprop="author">baobao</a>
+		
+  <p class="article-time">
+    <time datetime="2016-11-16T08:52:41.820Z" itemprop="datePublished"> Published 2016-11-16</time>
+    
+  </p>
+</header>
+    <div class="article-content">
         
+        <blockquote>
+<p>随笔，小记。。</p>
+</blockquote>
+<h3 id="transclude？"><a href="#transclude？" class="headerlink" title="transclude？"></a>transclude？</h3><p>嵌入的意思,也就是说你是否需要将你的指令（内部）的元素嵌入到你的（模板）中去，默认为false。如果你需要的话，那么就需要将transclude设置为true。如果将这个值设置为true的话，就要配合angular的ng-transclude指令来进行使用，</p>
+<hr>
+<h3 id="代码实现？"><a href="#代码实现？" class="headerlink" title="代码实现？"></a>代码实现？</h3><p>1.html中的代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;!--  指令a-transclude 内部含有元素--&gt;</div><div class="line">&lt;breadcrumb&gt;指令（内部）内容&lt;/breadcrumb&gt;</div></pre></td></tr></table></figure></p>
+<p>2.js中的代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">myApp.directive(&apos;breadcrumb&apos;, [&apos;$parse&apos;, function($parse) &#123;</div><div class="line">		return &#123;</div><div class="line">			templateUrl: &apos;tmpls/breadcrumb.html&apos;,</div><div class="line">            transclude:true</div><div class="line">		&#125;</div><div class="line">&#125;]);</div></pre></td></tr></table></figure></p>
+<p>3.tmpls/breadcrumb.html模板中的代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;ol&gt;</div><div class="line">  &lt;li&gt;</div><div class="line">  	&lt;a href=&quot;#&quot; ng-transclude&gt;模板1&lt;/a&gt;</div><div class="line">  	&lt;a href=&quot;#&quot;&gt;模板2&lt;/a&gt;</div><div class="line">  &lt;/li&gt;</div><div class="line">&lt;/ol&gt;</div></pre></td></tr></table></figure></p>
+<p>备注：<strong><em> 模板由两部分组成，一部分是含有ng-transclude指令的，一部分是不含有这个指令的 </em></strong></p>
+<p><strong><em> 最后的结果是 </em></strong></p>
+<p>(<a href="https://blog.yoyoyuan.top/img/transclude.png" target="_blank" rel="external">https://blog.yoyoyuan.top/img/transclude.png</a>)</p>
+<hr>
 
-<div class="archive-title" >
-  <h2 class="archive-icon">2016/11</h2>
-  
-  <div class="archiveslist archive-float clearfix">
-   <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2016/11/">Nov 2016</a><span class="archive-list-count">11</span></li></ul>
- </div>
-  
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
 </div>
-<div id="main" class="archive-part clearfix">
-  <div id="archive-page">
-
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/blog/2016/11/16/GIT与GitHub以及博客的创建/" title="" itemprop="url">
-  
-
-    <time datetime="2016-11-16T13:34:30.889Z" itemprop="datePublished">2016-11-16</time>
 
 
-    <h1 itemprop="name">&nbsp;</h1>
-
-  </a>
-</section>
-
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/blog/2016/11/16/键盘事件/" title="键盘事件" itemprop="url">
-  
-
-    <time datetime="2016-11-16T08:52:41.834Z" itemprop="datePublished">2016-11-16</time>
 
 
-    <h1 itemprop="name">键盘事件</h1>
+<div class="comments-count">
+	
+</div>
 
-  </a>
-</section>
-
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/blog/2016/11/16/webpack/" title="webpack的搭建" itemprop="url">
-  
-
-    <time datetime="2016-11-16T08:52:41.833Z" itemprop="datePublished">2016-11-16</time>
+</footer>
 
 
-    <h1 itemprop="name">webpack的搭建</h1>
-
-  </a>
-</section>
-
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/blog/2016/11/16/tools_contrast/" title="前端工具小总结" itemprop="url">
-  
-
-    <time datetime="2016-11-16T08:52:41.830Z" itemprop="datePublished">2016-11-16</time>
+    </article>
 
 
-    <h1 itemprop="name">前端工具小总结</h1>
-
-  </a>
-</section>
-
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/blog/2016/11/16/js基础1/" title="js超基础" itemprop="url">
-  
-
-    <time datetime="2016-11-16T08:52:41.829Z" itemprop="datePublished">2016-11-16</time>
 
 
-    <h1 itemprop="name">js超基础</h1>
-
-  </a>
-</section>
-
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/blog/2016/11/16/jsonp/" title="JSONP" itemprop="url">
-  
-
-    <time datetime="2016-11-16T08:52:41.827Z" itemprop="datePublished">2016-11-16</time>
 
 
-    <h1 itemprop="name">JSONP</h1>
 
-  </a>
-</section>
-
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/blog/2016/11/16/jq基础2/" title="js中的集合" itemprop="url">
-  
-
-    <time datetime="2016-11-16T08:52:41.825Z" itemprop="datePublished">2016-11-16</time>
-
-
-    <h1 itemprop="name">js中的集合</h1>
-
-  </a>
-</section>
-
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/blog/2016/11/16/jdk/" title="关于安装jdk后没有javac文件的小结" itemprop="url">
-  
-
-    <time datetime="2016-11-16T08:52:41.823Z" itemprop="datePublished">2016-11-16</time>
-
-
-    <h1 itemprop="name">关于安装jdk后没有javac文件的小结</h1>
-
-  </a>
-</section>
-
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/blog/2016/11/16/hello-world/" title="baobao滴博客" itemprop="url">
-  
-
-    <time datetime="2016-11-16T08:52:41.822Z" itemprop="datePublished">2016-11-16</time>
-
-
-    <h1 itemprop="name">baobao滴博客</h1>
-
-  </a>
-</section>
-
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/blog/2016/11/16/gulp/" title="gulp搭建" itemprop="url">
-  
-
-    <time datetime="2016-11-16T08:52:41.821Z" itemprop="datePublished">2016-11-16</time>
-
-
-    <h1 itemprop="name">gulp搭建</h1>
-
-  </a>
-</section>
-
-
-  <nav id="page-nav" class="clearfix archive-nav">
-    <span class="page-number current">1</span><a class="page-number" href="/blog/archives/2016/11/page/2/">2</a><a class="extend next" rel="next" href="/blog/archives/2016/11/page/2/">Next<span></span></a>
+  <nav id="page-nav" class="clearfix">
+    <a class="extend prev" rel="prev" href="/blog/"><span></span>Prev</a><a class="page-number" href="/blog/">1</a><span class="page-number current">2</span>
   </nav>
 
+</div>
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+
+  
+<div class="github-card">
+<p class="asidetitle">Github Card</p>
+<div class="github-card" data-github="https://github.com/guaibaobao" data-width="220" data-height="119" data-theme="medium">
+<script type="text/javascript" src="//cdn.jsdelivr.net/github-cards/latest/widget.js" ></script>
+</div>
   </div>
+
+
+
+  
+
+  
+
+  <div class="linkslist">
+  <p class="asidetitle">Links</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="https://github.com/guaibaobao/blog" target="_blank" title="一个面向程序员交流分享的新一代社区">码农圈</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="https://guaibaobao.github.io/blog/" target="_blank" title="baobao&#39;s Blog">baobao&#39;s Blog</a>
+            
+          </li>
+        
+    </ul>
 </div>
 
-      </div>
-      <footer><div id="footer" >
+  
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">Weibo</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=null&verifier=&dpc=1"></iframe>
+</div>
+
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
 	
 	<div class="line">
 		<span></span>
@@ -263,7 +235,7 @@
 		</p>
 </div>
 </footer>
-      <script src="/blog/js/jquery-2.0.3.min.js"></script>
+    <script src="/blog/js/jquery-2.0.3.min.js"></script>
 <script src="/blog/js/jquery.imagesloaded.min.js"></script>
 <script src="/blog/js/gallery.js"></script>
 <script src="/blog/js/jquery.qrcode-0.12.0.min.js"></script>
@@ -382,5 +354,5 @@ var _hmt = _hmt || [];
 
 <!-- Tiny_search End -->
 
-    </body>
-   </html>
+  </body>
+ </html>
