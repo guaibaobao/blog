@@ -4,29 +4,41 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>jdk | guaibaobao&#39;s blog</title>
+    <title>使用nvm安装node.js | guaibaobao&#39;s blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="baobao">
     
 
     
-    <meta name="description" content="title: 关于安装jdk后没有javac文件的小结今天在用ionic的时候遇到了这个让人恶心的问题，我也是没谁了，折腾了一上午的时间，总算解决了，在这里总结一下我通过查看各种资料和自己遇到的问题，希望对大家有帮助。
+    <meta name="description" content="使用nvm安装node.js
+经过了一次一次的打击我也是心里充满了压力，可是压力并没有改变什么所以我要写点有用的。。。
 
-第一种情况首先要确保环境变量是否搭建好，有的电脑在安装好后会自动搭建好环境的，但是有的电脑需要自己去搭建，解决方案：在属性—&amp;gt;高级下有个环境变量—-&amp;gt;在系统环境变量">
+
+首先要解压nvm.rar包
+使用管理员权限运行install.cmd在命令窗口中输入当前文件夹的地址
+修改生成的setting.txt（root：D：\Develop\nvm–当前文件夹路径  path: D:\Develop\nodejs–配置后面要生成的目录   arch">
 <meta property="og:type" content="article">
-<meta property="og:title" content="jdk">
-<meta property="og:url" content="http://yoursite.com/2016/09/17/jdk/index.html">
+<meta property="og:title" content="使用nvm安装node.js">
+<meta property="og:url" content="http://yoursite.com/2016/10/23/使用nvm安装node-js/index.html">
 <meta property="og:site_name" content="guaibaobao's blog">
-<meta property="og:description" content="title: 关于安装jdk后没有javac文件的小结今天在用ionic的时候遇到了这个让人恶心的问题，我也是没谁了，折腾了一上午的时间，总算解决了，在这里总结一下我通过查看各种资料和自己遇到的问题，希望对大家有帮助。
+<meta property="og:description" content="使用nvm安装node.js
+经过了一次一次的打击我也是心里充满了压力，可是压力并没有改变什么所以我要写点有用的。。。
 
-第一种情况首先要确保环境变量是否搭建好，有的电脑在安装好后会自动搭建好环境的，但是有的电脑需要自己去搭建，解决方案：在属性—&amp;gt;高级下有个环境变量—-&amp;gt;在系统环境变量">
-<meta property="og:updated_time" content="2016-11-17T01:53:39.690Z">
+
+首先要解压nvm.rar包
+使用管理员权限运行install.cmd在命令窗口中输入当前文件夹的地址
+修改生成的setting.txt（root：D：\Develop\nvm–当前文件夹路径  path: D:\Develop\nodejs–配置后面要生成的目录   arch">
+<meta property="og:updated_time" content="2016-11-17T03:36:11.496Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="jdk">
-<meta name="twitter:description" content="title: 关于安装jdk后没有javac文件的小结今天在用ionic的时候遇到了这个让人恶心的问题，我也是没谁了，折腾了一上午的时间，总算解决了，在这里总结一下我通过查看各种资料和自己遇到的问题，希望对大家有帮助。
+<meta name="twitter:title" content="使用nvm安装node.js">
+<meta name="twitter:description" content="使用nvm安装node.js
+经过了一次一次的打击我也是心里充满了压力，可是压力并没有改变什么所以我要写点有用的。。。
 
-第一种情况首先要确保环境变量是否搭建好，有的电脑在安装好后会自动搭建好环境的，但是有的电脑需要自己去搭建，解决方案：在属性—&amp;gt;高级下有个环境变量—-&amp;gt;在系统环境变量">
+
+首先要解压nvm.rar包
+使用管理员权限运行install.cmd在命令窗口中输入当前文件夹的地址
+修改生成的setting.txt（root：D：\Develop\nvm–当前文件夹路径  path: D:\Develop\nodejs–配置后面要生成的目录   arch">
 
     
     <link rel="alternative" href="/atom.xml" title="guaibaobao&#39;s blog" type="application/atom+xml">
@@ -86,14 +98,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/blog/2016/09/17/jdk/" title="jdk" itemprop="url">jdk</a>
+      <a href="/blog/2016/10/23/使用nvm安装node-js/" title="使用nvm安装node.js" itemprop="url">使用nvm安装node.js</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/blog/about" title="baobao" target="_blank" itemprop="author">baobao</a>
 		
   <p class="article-time">
-    <time datetime="2016-09-17T01:52:28.000Z" itemprop="datePublished"> 發表於 2016-09-17</time>
+    <time datetime="2016-10-23T10:35:42.000Z" itemprop="datePublished"> 發表於 2016-10-23</time>
     
   </p>
 </header>
@@ -102,18 +114,28 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目錄</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#title-关于安装jdk后没有javac文件的小结"><span class="toc-number">1.</span> <span class="toc-text">title: 关于安装jdk后没有javac文件的小结</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#使用nvm安装node-js"><span class="toc-number">1.</span> <span class="toc-text">使用nvm安装node.js</span></a></li></ol>
 		
 		</div>
 		
-		<hr>
-<h2 id="title-关于安装jdk后没有javac文件的小结"><a href="#title-关于安装jdk后没有javac文件的小结" class="headerlink" title="title: 关于安装jdk后没有javac文件的小结"></a>title: 关于安装jdk后没有javac文件的小结</h2><p>今天在用ionic的时候遇到了这个让人恶心的问题，我也是没谁了，折腾了一上午的时间，总算解决了，在这里总结一下我通过查看各种资料和自己遇到的问题，希望对大家有帮助。</p>
+		<h1 id="使用nvm安装node-js"><a href="#使用nvm安装node-js" class="headerlink" title="使用nvm安装node.js"></a>使用nvm安装node.js</h1><hr>
+<p>经过了一次一次的打击我也是心里充满了压力，可是压力并没有改变什么所以我要写点有用的。。。</p>
+<blockquote>
 <ul>
-<li>第一种情况<br>首先要确保环境变量是否搭建好，有的电脑在安装好后会自动搭建好环境的，但是有的电脑需要自己去搭建，<br>解决方案：在属性—&gt;高级下有个环境变量—-&gt;在系统环境变量path后面加；D:\Program Files\Java\jdk1.8.0_102\bin;JAVA_HOME,是可以不用配置的。classpath是跑项目的时候用到的不重要。</li>
-<li>第二种情况：<br>可能是因为你之前安装过一个不完整的JDK导致的，你又新安装了已个JDK，建议 把你的JAVA_HOME , path清理一下 ,把JDK卸载干净,重新安装, 在系统环境变量path后面加；D:\Program Files\Java\jdk1.8.0_102\bin;  </li>
-<li>第三种情况<br>这是我遇到的令人抓狂的事，JDK和JRE一定不能安装在同一文件夹中，（jdk自带的那个jre除外）否则运行的时候会找不到javac命令。JRE晚于JDK安装，而JRE只是提供Java运行环境，不需要javac编译命令的。JRE安装前你会发现它会自动删除一些无关文件，如果同JDK安装在同一目录下，原本JDK中完好的javac命令就会被删除！！<br>解决方案：重新安装一次JDK 你会发现系统会</li>
+<li>首先要解压nvm.rar包</li>
+<li>使用管理员权限运行install.cmd在命令窗口中输入当前文件夹的地址</li>
+<li>修改生成的setting.txt（root：D：\Develop\nvm–当前文件夹路径  path: D:\Develop\nodejs–配置后面要生成的目录   arch: 64–机器位   proxy: none）</li>
+<li>配置nvm的环境变量，让其能够在cmd中使用其变量<br>  （1）点计算机右键选属性<br>  （2）点高级系统设置再选环境变量<br>  （3）在用户变量表中选新建再设置变量名（NVM_HOME）和变量值（D：\develop\nvm）<br>  （4）在path的变量值后面添加%NVM_HOME%;<br>  （5）最后在计算机搜索框中输入%NVM_HOME%检验是否安装成功</li>
+<li>使用nvm命令生成nodejs(文件夹）快捷方式<br>  （1）点计算机右键选属性<br>  （2）点高级系统设置再选环境变量<br>  （3）在用户变量表中选新建再设置变量名（NVM_SYMLINK）和变量值（D：\develop\nvm）<br>  （4）在path的变量值后面添加%NVM_SYMLINK%;<br>  （5）最后在计算机搜索框中输入%NVM_SYMLINK%检验是否安装成功<br><em>配置npm所有工具集的环境变量<br>  （1）在path的变量值后面添加%NPM_HOME%;<br>  （2）最后在计算机搜索框中输入%NPM_HOME%检验是否安装成功
+</em>.改变npm的安装路径<br>  （1）打开命令窗口，在窗口中输入echo “”.npmrc<br>  （2）在C盘中点击（用户文件夹），再点击内部的Administrator查看是否创建。npmrc文件夹<br>  （3）用记事本的方式打开.npmrc文件夹,并编辑其内容为：<pre><code>cache=D:\Develop\nvm\npm-cache（安装时的缓存）
+prefix=D:\Develop\nvm\npm（将工具安装到哪）
+</code></pre><em>进行最后一步<br>  （1）以上步骤完成之后，在命令窗口输入http_server回车，然后把npm中的http_server删除<br>  （2）然后在命令窗口中输入npm install -g http-server回车下载http-server
+</em>注意：npm下载安装工具（安装包的管理工具）；<pre><code>windows的环境变量添加到PATH，新增一个变量，是变量添加
+</code></pre></li>
 </ul>
-  
+</blockquote>
+<pre><code>这只是我个人的一点总结，希望以后会有用。
+</code></pre>  
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
@@ -125,7 +147,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://yoursite.com/blog/2016/09/17/jdk/" data-title="jdk | guaibaobao&#39;s blog" data-tsina="null" class="share clearfix">
+	  <div data-url="http://yoursite.com/blog/2016/10/23/使用nvm安装node-js/" data-title="使用nvm安装node.js | guaibaobao&#39;s blog" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -138,14 +160,14 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/blog/2016/09/20/键盘事件/" title="键盘事件">
-  <strong>上一篇：</strong><br/>
-  <span>
-  键盘事件</span>
+
+<div class="next">
+<a href="/blog/2016/10/17/tools-contrast/"  title="tools_contrast">
+ <strong>下一篇：</strong><br/> 
+ <span>tools_contrast
+</span>
 </a>
 </div>
-
 
 </nav>
 
@@ -157,7 +179,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目錄</strong>
  
- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#title-关于安装jdk后没有javac文件的小结"><span class="toc-number">1.</span> <span class="toc-text">title: 关于安装jdk后没有javac文件的小结</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#使用nvm安装node-js"><span class="toc-number">1.</span> <span class="toc-text">使用nvm安装node.js</span></a></li></ol>
  
   </div>
 
