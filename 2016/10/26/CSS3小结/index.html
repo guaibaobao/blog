@@ -4,23 +4,32 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>hello-everyone | guaibaobao&#39;s blog</title>
+    <title>CSS3小结 | guaibaobao&#39;s blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="baobao">
     
 
     
-    <meta name="description" content="title: baobao滴博客Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me">
+    <meta name="description" content="title: css3 弹性盒子模型文章涵盖css3中文字阴影,文字描边,弹性盒子模型,盒模型新增属性,其他的盒模型属性,CSS3分栏布局
+总结文字阴影text-shadow：x y blur color
+文字描边-webkit-text-stroke:宽度 颜色
+弹性盒子模型注意在使用弹性盒模型的时候 父元素必须要加display:flex或display:inline-box（需要加内核前缀">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hello-everyone">
-<meta property="og:url" content="http://yoursite.com/2016/10/13/hello-everyone/index.html">
+<meta property="og:title" content="CSS3小结">
+<meta property="og:url" content="http://yoursite.com/2016/10/26/CSS3小结/index.html">
 <meta property="og:site_name" content="guaibaobao's blog">
-<meta property="og:description" content="title: baobao滴博客Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me">
-<meta property="og:updated_time" content="2016-11-17T03:10:36.494Z">
+<meta property="og:description" content="title: css3 弹性盒子模型文章涵盖css3中文字阴影,文字描边,弹性盒子模型,盒模型新增属性,其他的盒模型属性,CSS3分栏布局
+总结文字阴影text-shadow：x y blur color
+文字描边-webkit-text-stroke:宽度 颜色
+弹性盒子模型注意在使用弹性盒模型的时候 父元素必须要加display:flex或display:inline-box（需要加内核前缀">
+<meta property="og:updated_time" content="2016-11-17T03:49:13.977Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hello-everyone">
-<meta name="twitter:description" content="title: baobao滴博客Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me">
+<meta name="twitter:title" content="CSS3小结">
+<meta name="twitter:description" content="title: css3 弹性盒子模型文章涵盖css3中文字阴影,文字描边,弹性盒子模型,盒模型新增属性,其他的盒模型属性,CSS3分栏布局
+总结文字阴影text-shadow：x y blur color
+文字描边-webkit-text-stroke:宽度 颜色
+弹性盒子模型注意在使用弹性盒模型的时候 父元素必须要加display:flex或display:inline-box（需要加内核前缀">
 
     
     <link rel="alternative" href="/atom.xml" title="guaibaobao&#39;s blog" type="application/atom+xml">
@@ -80,14 +89,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/blog/2016/10/13/hello-everyone/" title="hello-everyone" itemprop="url">hello-everyone</a>
+      <a href="/blog/2016/10/26/CSS3小结/" title="CSS3小结" itemprop="url">CSS3小结</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/blog/about" title="baobao" target="_blank" itemprop="author">baobao</a>
 		
   <p class="article-time">
-    <time datetime="2016-10-13T15:03:57.000Z" itemprop="datePublished"> Published 2016-10-13</time>
+    <time datetime="2016-10-26T13:48:02.000Z" itemprop="datePublished"> Published 2016-10-26</time>
     
   </p>
 </header>
@@ -96,21 +105,17 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">Contents</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#title-baobao滴博客"><span class="toc-number">1.</span> <span class="toc-text">title: baobao滴博客</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">2.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">2.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">2.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">2.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">2.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#title-css3-弹性盒子模型"><span class="toc-number">1.</span> <span class="toc-text">title: css3 弹性盒子模型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#总结"><span class="toc-number">2.</span> <span class="toc-text">总结</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#文字阴影"><span class="toc-number">2.1.</span> <span class="toc-text">文字阴影</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#文字描边"><span class="toc-number">2.2.</span> <span class="toc-text">文字描边</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#弹性盒子模型"><span class="toc-number">2.3.</span> <span class="toc-text">弹性盒子模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#盒模型新增属性"><span class="toc-number">2.4.</span> <span class="toc-text">盒模型新增属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#其他的盒模型属性"><span class="toc-number">2.5.</span> <span class="toc-text">其他的盒模型属性</span></a></li></ol></li></ol>
 		
 		</div>
 		
 		<hr>
-<h2 id="title-baobao滴博客"><a href="#title-baobao滴博客" class="headerlink" title="title: baobao滴博客"></a>title: baobao滴博客</h2><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$这两天好累呀！又忙到了现在,不过每天都会有进步,希望未来的自己会比现在向前迈进点。。。我会继续努力的,晚安。。。全世界。</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+<h2 id="title-css3-弹性盒子模型"><a href="#title-css3-弹性盒子模型" class="headerlink" title="title: css3 弹性盒子模型"></a>title: css3 弹性盒子模型</h2><p>文章涵盖css3中文字阴影,文字描边,弹性盒子模型,盒模型新增属性,其他的盒模型属性,CSS3分栏布局</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><h3 id="文字阴影"><a href="#文字阴影" class="headerlink" title="文字阴影"></a>文字阴影</h3><p>text-shadow：x y blur color</p>
+<h3 id="文字描边"><a href="#文字描边" class="headerlink" title="文字描边"></a>文字描边</h3><p>-webkit-text-stroke:宽度 颜色</p>
+<h3 id="弹性盒子模型"><a href="#弹性盒子模型" class="headerlink" title="弹性盒子模型"></a>弹性盒子模型</h3><p>注意在使用弹性盒模型的时候 父元素必须要加display:flex或<br>display:inline-box（需要加内核前缀）<br>box-orient 定义盒模型的布局方向<br>box-direction 元素排列顺序<br>box-ordinal-group 设置元素的具体位置</p>
+<h3 id="盒模型新增属性"><a href="#盒模型新增属性" class="headerlink" title="盒模型新增属性"></a>盒模型新增属性</h3><p>box-shadow:[inset] x y blur [spread] color<br>参数<br>inset：投影方式<br>inset：内投影<br>不给：外投影<br>x、y：阴影偏移<br>blur：模糊半径<br>spread：扩展阴影半径<br>先扩展原有形状，再开始画阴影<br>Color</p>
+<h3 id="其他的盒模型属性"><a href="#其他的盒模型属性" class="headerlink" title="其他的盒模型属性"></a>其他的盒模型属性</h3><p>box-reflect 倒影<br>direction  方向     above|below|left|right;<br>距离<br>渐变（可选，后面讲）<br>resize 自由缩放<br>Both 水平垂直都可以缩放<br>Horizontal 只有水平方向可以缩放<br>Vertical 只有垂直方向可以缩放<br>注意：一定要配合overflow:auto 一块使用只有水平方向可以缩放<br>box-sizing 盒模型解析模式<br>Content-box  标准盒模型 width/height=border+padding+content<br>Border-box 怪异盒模型 width/height=content</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -123,7 +128,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://yoursite.com/blog/2016/10/13/hello-everyone/" data-title="hello-everyone | guaibaobao&#39;s blog" data-tsina="null" class="share clearfix">
+	  <div data-url="http://yoursite.com/blog/2016/10/26/CSS3小结/" data-title="CSS3小结 | guaibaobao&#39;s blog" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -136,19 +141,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/blog/2016/10/15/React小结/" title="React小结">
-  <strong>上一篇：</strong><br/>
-  <span>
-  React小结</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/blog/2016/10/12/GIT与GitHub以及博客的创建/"  title="GIT与GitHub以及博客的创建">
+<a href="/blog/2016/10/23/使用nvm安装node-js/"  title="使用nvm安装node.js">
  <strong>下一篇：</strong><br/> 
- <span>GIT与GitHub以及博客的创建
+ <span>使用nvm安装node.js
 </span>
 </a>
 </div>
@@ -163,7 +160,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">Contents</strong>
  
- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#title-baobao滴博客"><span class="toc-number">1.</span> <span class="toc-text">title: baobao滴博客</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">2.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">2.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">2.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">2.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">2.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#title-css3-弹性盒子模型"><span class="toc-number">1.</span> <span class="toc-text">title: css3 弹性盒子模型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#总结"><span class="toc-number">2.</span> <span class="toc-text">总结</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#文字阴影"><span class="toc-number">2.1.</span> <span class="toc-text">文字阴影</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#文字描边"><span class="toc-number">2.2.</span> <span class="toc-text">文字描边</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#弹性盒子模型"><span class="toc-number">2.3.</span> <span class="toc-text">弹性盒子模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#盒模型新增属性"><span class="toc-number">2.4.</span> <span class="toc-text">盒模型新增属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#其他的盒模型属性"><span class="toc-number">2.5.</span> <span class="toc-text">其他的盒模型属性</span></a></li></ol></li></ol>
  
   </div>
 

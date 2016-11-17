@@ -44,7 +44,7 @@
 				<h1 class="site-name"><a href="/blog/" title="guaibaobao&#39;s blog">guaibaobao&#39;s blog</a></h1>
 				<h2 class="blog-motto"></h2>
 			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
 			</a></div>
 			<nav class="animated">
 				<ul>
@@ -60,7 +60,7 @@
  					
 					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
 						<label>Search</label>
-						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
 						<input type="hidden" name="q" value="site:yoursite.com">
 					</form>
 					
@@ -78,6 +78,67 @@
         <header class="article-info clearfix">
   <h1 itemprop="name">
     
+      <a href="/blog/2016/09/20/键盘事件/" title="键盘事件" itemprop="url">键盘事件</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/blog/about" title="baobao" target="_blank" itemprop="author">baobao</a>
+		
+  <p class="article-time">
+    <time datetime="2016-09-20T02:19:12.000Z" itemprop="datePublished"> Published 2016-09-20</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <hr>
+<h2 id="title-键盘事件"><a href="#title-键盘事件" class="headerlink" title="title: 键盘事件"></a>title: 键盘事件</h2><blockquote>
+<p>随笔，小记。。</p>
+</blockquote>
+<h3 id="键盘事件执行顺序？"><a href="#键盘事件执行顺序？" class="headerlink" title="键盘事件执行顺序？"></a>键盘事件执行顺序？</h3><p>触发键盘事件，顺序为keydown -&gt; keypress -&gt;keyup。</p>
+<hr>
+<h3 id="ta们之间的区别？"><a href="#ta们之间的区别？" class="headerlink" title="ta们之间的区别？"></a>ta们之间的区别？</h3><p>1、keydown和keypress事件表示手指按下瞬间，和按下不松手的这种状态下的事件，事件触发在单词还没敲进文本框时，如果在keydown、keypress事件中输出文本框中的文本，得到的是触发键盘事件前的文本。而keyup事件触发时整个键盘事件的操作已经完成，获得的是触发键盘事件后的文本。</p>
+<p>2、keypress对中文输入法支持不好，无法响应中文输入,无法响应系统功能键（如delete，空格键）。</p>
+<p>3、keyup事件中无法阻止浏览器默认事件，因为在keypress时，浏览器默认行为已经完成，用e.preventDefault和event.teturnValue=false都不能阻止在文本框中输入文字的行为，如要阻止在文本框中输入文字，必须在keydown或keypress时进行阻止。</p>
+<p>4、textInput事件<br>若把textInpput也加进来，触发的顺序为：keydown -&gt; keypress -&gt;textInput -&gt; keyup<br>textInput事件是后来支持的，主要用来替换keypress，与keypress的主要差别在于添加了对中文输入法的支持，还有一点就是textInput只在可编辑文本区才能触发（如input、textarea），而keypress是任何能获得焦点的控件的能触发（如button），但是textInput事件的支持还不是很好。</p>
+<p>备注：<strong><em> 只会在用户输入可视字符时触发 </em></strong></p>
+<hr>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
       <a href="/blog/2016/09/17/jdk/" title="jdk" itemprop="url">jdk</a>
   </h1>
   <p class="article-author">By
@@ -85,7 +146,7 @@
 		<a href="/blog/about" title="baobao" target="_blank" itemprop="author">baobao</a>
 		
   <p class="article-time">
-    <time datetime="2016-09-17T01:52:28.000Z" itemprop="datePublished"> 發表於 2016-09-17</time>
+    <time datetime="2016-09-17T01:52:28.000Z" itemprop="datePublished"> Published 2016-09-17</time>
     
   </p>
 </header>
@@ -134,15 +195,15 @@
   </nav>
 
 </div>
-      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
 
 <div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
 <aside class="clearfix">
 
   
 <div class="github-card">
-<p class="asidetitle">Github 名片</p>
+<p class="asidetitle">Github Card</p>
 <div class="github-card" data-github="https://github.com/guaibaobao" data-width="220" data-height="119" data-theme="medium">
 <script type="text/javascript" src="//cdn.jsdelivr.net/github-cards/latest/widget.js" ></script>
 </div>
@@ -155,7 +216,7 @@
   
 
   <div class="linkslist">
-  <p class="asidetitle">友情鏈接</p>
+  <p class="asidetitle">Links</p>
     <ul>
         
           <li>
@@ -177,11 +238,11 @@
 
 
   <div class="rsspart">
-	<a href="/atom.xml" target="_blank" title="rss">RSS 訂閱</a>
+	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
 </div>
 
   <div class="weiboshow">
-  <p class="asidetitle">新浪微博</p>
+  <p class="asidetitle">Weibo</p>
     <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=null&verifier=&dpc=1"></iframe>
 </div>
 
@@ -333,7 +394,7 @@ var _hmt = _hmt || [];
 <!-- Totop Begin -->
 
 	<div id="totop">
-	<a title="返回頂部"><img src="/blog/img/scrollup.png"/></a>
+	<a title="Back to Top"><img src="/blog/img/scrollup.png"/></a>
 	</div>
 	<script src="/blog/js/totop.js"></script>
 
