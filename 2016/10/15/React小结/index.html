@@ -35,7 +35,7 @@ React是facebook开源的一个用于构建用户界面的javascript库，应用
 
 React是为了解决：构建随着时间数据不断变化的大规模应用程序。
 为什么要">
-<meta property="og:updated_time" content="2016-11-17T03:16:04.325Z">
+<meta property="og:updated_time" content="2016-11-17T03:18:02.418Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="React小结">
 <meta name="twitter:description" content="React谈谈自己对React的浅了解，大致阅读了一些关于React的文章，来总结点笔记留给以后的自己。
@@ -140,7 +140,7 @@ React是为了解决：构建随着时间数据不断变化的大规模应用程
 <p>答：因为在用js操作DOM的过程中效率非常低（Js对虚拟DOM操作是对DOM进行操作和之    前的虚拟DOM对象进行比较形成新的虚拟DOM）</p>
 </li>
 </ul>
-<p>React的[安装] [df1] 和 [语法] [df1]</p>
+<p>React的[安装] 和 [语法] </p>
 <h3 id="1-在之前安装的Webpack的基础上，在原来文件中打开命令窗口"><a href="#1-在之前安装的Webpack的基础上，在原来文件中打开命令窗口" class="headerlink" title="1.在之前安装的Webpack的基础上，在原来文件中打开命令窗口"></a>1.在之前安装的Webpack的基础上，在原来文件中打开命令窗口</h3><p>输入指令npm install  –save-dev   react;</p>
 <p>  npm install –save-dev  react-dom</p>
 <h3 id="2-在publish文件下：创建一个index-html并编辑其内容为："><a href="#2-在publish文件下：创建一个index-html并编辑其内容为：" class="headerlink" title="2.在publish文件下：创建一个index.html并编辑其内容为："></a>2.在publish文件下：创建一个index.html并编辑其内容为：</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;script  <span class="built_in">type</span>=<span class="string">"text/javascript"</span> src=<span class="string">"node-module/dist/react.min.js"</span>&gt;&lt;/scrpt&gt;</div><div class="line">        &lt;script  <span class="built_in">type</span>=<span class="string">"text/javascript"</span> src=<span class="string">"node-module/dist/react-dom.min.js"</span>&gt;&lt;/scrpt&gt;</div><div class="line">        &lt;script  <span class="built_in">type</span>=<span class="string">"text/javascript"</span> src=<span class="string">"https://unpkg.com/babel-core@5.8.38/browser.min.js"</span>&gt;&lt;/scrpt&gt;（这个网址是在线解析的引用）</div><div class="line">         &lt;script  <span class="built_in">type</span>=<span class="string">"text/babel"</span>&gt;</div><div class="line">                 ReactDOM.render(</div><div class="line">                            &lt;div&gt;Hello World&lt;/div&gt;,</div><div class="line">                            document.getElementById(<span class="string">"demo"</span>)</div><div class="line">                  ); </div><div class="line">         &lt;/scrpt&gt;</div><div class="line">   说明：render中的第一个参数是：组件名，第二个参数是：DOM容器。</div></pre></td></tr></table></figure>
