@@ -44,7 +44,7 @@
 				<h1 class="site-name"><a href="/blog/" title="guaibaobao&#39;s blog">guaibaobao&#39;s blog</a></h1>
 				<h2 class="blog-motto"></h2>
 			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
 			</a></div>
 			<nav class="animated">
 				<ul>
@@ -60,7 +60,7 @@
  					
 					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
 						<label>Search</label>
-						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
 						<input type="hidden" name="q" value="site:yoursite.com">
 					</form>
 					
@@ -85,7 +85,7 @@
 		<a href="/blog/about" title="baobao" target="_blank" itemprop="author">baobao</a>
 		
   <p class="article-time">
-    <time datetime="2016-10-15T15:12:01.000Z" itemprop="datePublished"> Published 2016-10-15</time>
+    <time datetime="2016-10-15T15:12:01.000Z" itemprop="datePublished"> 发表于 2016-10-15</time>
     
   </p>
 </header>
@@ -104,12 +104,10 @@
 <p>答：因为在用js操作DOM的过程中效率非常低（Js对虚拟DOM操作是对DOM进行操作和之    前的虚拟DOM对象进行比较形成新的虚拟DOM）</p>
 </li>
 </ul>
-<p>React的[安装][df1] 和 [语法][df1]</p>
-<p>###1.在之前安装的Webpack的基础上，在原来文件中打开命令窗口</p>
-<p>输入指令npm install  –save-dev   react;</p>
+<p>React的[安装] [df1] 和 [语法] [df1]</p>
+<h3 id="1-在之前安装的Webpack的基础上，在原来文件中打开命令窗口"><a href="#1-在之前安装的Webpack的基础上，在原来文件中打开命令窗口" class="headerlink" title="1.在之前安装的Webpack的基础上，在原来文件中打开命令窗口"></a>1.在之前安装的Webpack的基础上，在原来文件中打开命令窗口</h3><p>输入指令npm install  –save-dev   react;</p>
 <p>  npm install –save-dev  react-dom</p>
-<p>###2.在publish文件下：创建一个index.html并编辑其内容为：</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;script  <span class="built_in">type</span>=<span class="string">"text/javascript"</span> src=<span class="string">"node-module/dist/react.min.js"</span>&gt;&lt;/scrpt&gt;</div><div class="line">        &lt;script  <span class="built_in">type</span>=<span class="string">"text/javascript"</span> src=<span class="string">"node-module/dist/react-dom.min.js"</span>&gt;&lt;/scrpt&gt;</div><div class="line">        &lt;script  <span class="built_in">type</span>=<span class="string">"text/javascript"</span> src=<span class="string">"https://unpkg.com/babel-core@5.8.38/browser.min.js"</span>&gt;&lt;/scrpt&gt;（这个网址是在线解析的引用）</div><div class="line">         &lt;script  <span class="built_in">type</span>=<span class="string">"text/babel"</span>&gt;</div><div class="line">                 ReactDOM.render(</div><div class="line">                            &lt;div&gt;Hello World&lt;/div&gt;,</div><div class="line">                            document.getElementById(<span class="string">"demo"</span>)</div><div class="line">                  ); </div><div class="line">         &lt;/scrpt&gt;</div><div class="line">   说明：render中的第一个参数是：组件名，第二个参数是：DOM容器。</div></pre></td></tr></table></figure>
+<h3 id="2-在publish文件下：创建一个index-html并编辑其内容为："><a href="#2-在publish文件下：创建一个index-html并编辑其内容为：" class="headerlink" title="2.在publish文件下：创建一个index.html并编辑其内容为："></a>2.在publish文件下：创建一个index.html并编辑其内容为：</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;script  <span class="built_in">type</span>=<span class="string">"text/javascript"</span> src=<span class="string">"node-module/dist/react.min.js"</span>&gt;&lt;/scrpt&gt;</div><div class="line">        &lt;script  <span class="built_in">type</span>=<span class="string">"text/javascript"</span> src=<span class="string">"node-module/dist/react-dom.min.js"</span>&gt;&lt;/scrpt&gt;</div><div class="line">        &lt;script  <span class="built_in">type</span>=<span class="string">"text/javascript"</span> src=<span class="string">"https://unpkg.com/babel-core@5.8.38/browser.min.js"</span>&gt;&lt;/scrpt&gt;（这个网址是在线解析的引用）</div><div class="line">         &lt;script  <span class="built_in">type</span>=<span class="string">"text/babel"</span>&gt;</div><div class="line">                 ReactDOM.render(</div><div class="line">                            &lt;div&gt;Hello World&lt;/div&gt;,</div><div class="line">                            document.getElementById(<span class="string">"demo"</span>)</div><div class="line">                  ); </div><div class="line">         &lt;/scrpt&gt;</div><div class="line">   说明：render中的第一个参数是：组件名，第二个参数是：DOM容器。</div></pre></td></tr></table></figure>
 <p>创建组件时：</p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&lt;script  <span class="built_in">type</span>=<span class="string">"text/babel"</span>&gt;</div><div class="line">                         class Hello extends React.Component&#123;</div><div class="line">                                   <span class="function"><span class="title">render</span></span>( )&#123;</div><div class="line">                                             <span class="built_in">return</span> &lt;div&gt;Hello World&lt;/div&gt;;</div><div class="line">                                   &#125;</div><div class="line">                         &#125;</div><div class="line">               ReactDOM.render(</div><div class="line">                         &lt;Hello/&gt;,//自闭合标签</div><div class="line">                         document.getElementById(<span class="string">"demo"</span>)</div><div class="line">               );</div><div class="line">          &lt;/script&gt;</div></pre></td></tr></table></figure>
 <p>jsx的语法规则：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">  在src目录下的js文件下的component文件下创建World.jsx文件并编辑为：</div><div class="line">    import React from <span class="string">"react"</span>;</div><div class="line">     import ReactDOM from <span class="string">"react-dom"</span>;</div><div class="line">     <span class="built_in">export</span> default class Hello extends React.Component&#123;</div><div class="line">    <span class="function"><span class="title">render</span></span>()&#123;</div><div class="line">            <span class="built_in">return</span> &lt;div&gt;World&lt;/div&gt;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">在app.js中写入：</div><div class="line">import React from <span class="string">"react"</span>;</div><div class="line">import ReactDOM from <span class="string">"react-dom"</span>;</div><div class="line">import Hello from <span class="string">'./src/js/component/World.jsx'</span></div><div class="line">ReactDOM.render(</div><div class="line">        &lt;Hello/&gt;,</div><div class="line">        document.getElementById(<span class="string">"dukewei"</span>)</div><div class="line">    )</div><div class="line">   最后在命令窗口输入：npm run develop</div></pre></td></tr></table></figure></p>
@@ -158,7 +156,7 @@
 		<a href="/blog/about" title="baobao" target="_blank" itemprop="author">baobao</a>
 		
   <p class="article-time">
-    <time datetime="2016-10-13T15:03:57.000Z" itemprop="datePublished"> Published 2016-10-13</time>
+    <time datetime="2016-10-13T15:03:57.000Z" itemprop="datePublished"> 发表于 2016-10-13</time>
     
   </p>
 </header>
@@ -218,7 +216,7 @@
 		<a href="/blog/about" title="baobao" target="_blank" itemprop="author">baobao</a>
 		
   <p class="article-time">
-    <time datetime="2016-10-12T04:38:30.000Z" itemprop="datePublished"> Published 2016-10-12</time>
+    <time datetime="2016-10-12T04:38:30.000Z" itemprop="datePublished"> 发表于 2016-10-12</time>
     
   </p>
 </header>
@@ -310,7 +308,7 @@ branch: gh-pages
 		<a href="/blog/about" title="baobao" target="_blank" itemprop="author">baobao</a>
 		
   <p class="article-time">
-    <time datetime="2016-10-07T14:48:22.000Z" itemprop="datePublished"> Published 2016-10-07</time>
+    <time datetime="2016-10-07T14:48:22.000Z" itemprop="datePublished"> 发表于 2016-10-07</time>
     
   </p>
 </header>
@@ -370,7 +368,7 @@ branch: gh-pages
 		<a href="/blog/about" title="baobao" target="_blank" itemprop="author">baobao</a>
 		
   <p class="article-time">
-    <time datetime="2016-10-02T02:51:36.000Z" itemprop="datePublished"> Published 2016-10-02</time>
+    <time datetime="2016-10-02T02:51:36.000Z" itemprop="datePublished"> 发表于 2016-10-02</time>
     
   </p>
 </header>
@@ -426,7 +424,7 @@ callback(Callback): 可选参数 请求完成时(不需要是success)的回调�
 		<a href="/blog/about" title="baobao" target="_blank" itemprop="author">baobao</a>
 		
   <p class="article-time">
-    <time datetime="2016-09-29T12:46:04.000Z" itemprop="datePublished"> Published 2016-09-29</time>
+    <time datetime="2016-09-29T12:46:04.000Z" itemprop="datePublished"> 发表于 2016-09-29</time>
     
   </p>
 </header>
@@ -551,7 +549,7 @@ callback(Callback): 可选参数 请求完成时(不需要是success)的回调�
 		<a href="/blog/about" title="baobao" target="_blank" itemprop="author">baobao</a>
 		
   <p class="article-time">
-    <time datetime="2016-09-25T02:43:58.000Z" itemprop="datePublished"> Published 2016-09-25</time>
+    <time datetime="2016-09-25T02:43:58.000Z" itemprop="datePublished"> 发表于 2016-09-25</time>
     
   </p>
 </header>
@@ -642,7 +640,7 @@ callback(Callback): 可选参数 请求完成时(不需要是success)的回调�
 		<a href="/blog/about" title="baobao" target="_blank" itemprop="author">baobao</a>
 		
   <p class="article-time">
-    <time datetime="2016-09-20T02:19:12.000Z" itemprop="datePublished"> Published 2016-09-20</time>
+    <time datetime="2016-09-20T02:19:12.000Z" itemprop="datePublished"> 发表于 2016-09-20</time>
     
   </p>
 </header>
@@ -703,7 +701,7 @@ callback(Callback): 可选参数 请求完成时(不需要是success)的回调�
 		<a href="/blog/about" title="baobao" target="_blank" itemprop="author">baobao</a>
 		
   <p class="article-time">
-    <time datetime="2016-09-17T01:52:28.000Z" itemprop="datePublished"> Published 2016-09-17</time>
+    <time datetime="2016-09-17T01:52:28.000Z" itemprop="datePublished"> 发表于 2016-09-17</time>
     
   </p>
 </header>
@@ -748,15 +746,15 @@ callback(Callback): 可选参数 请求完成时(不需要是success)的回调�
 
 
 </div>
-      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
 
 <div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
 <aside class="clearfix">
 
   
 <div class="github-card">
-<p class="asidetitle">Github Card</p>
+<p class="asidetitle">Github 名片</p>
 <div class="github-card" data-github="https://github.com/guaibaobao" data-width="220" data-height="119" data-theme="medium">
 <script type="text/javascript" src="//cdn.jsdelivr.net/github-cards/latest/widget.js" ></script>
 </div>
@@ -769,7 +767,7 @@ callback(Callback): 可选参数 请求完成时(不需要是success)的回调�
   
 
   <div class="linkslist">
-  <p class="asidetitle">Links</p>
+  <p class="asidetitle">友情链接</p>
     <ul>
         
           <li>
@@ -791,11 +789,11 @@ callback(Callback): 可选参数 请求完成时(不需要是success)的回调�
 
 
   <div class="rsspart">
-	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
 </div>
 
   <div class="weiboshow">
-  <p class="asidetitle">Weibo</p>
+  <p class="asidetitle">新浪微博</p>
     <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=null&verifier=&dpc=1"></iframe>
 </div>
 
@@ -947,7 +945,7 @@ var _hmt = _hmt || [];
 <!-- Totop Begin -->
 
 	<div id="totop">
-	<a title="Back to Top"><img src="/blog/img/scrollup.png"/></a>
+	<a title="返回顶部"><img src="/blog/img/scrollup.png"/></a>
 	</div>
 	<script src="/blog/js/totop.js"></script>
 
