@@ -27,7 +27,7 @@ transclude？嵌入的意思,也就是说你是否需要将你的指令（内部
 transclude？嵌入的意思,也就是说你是否需要将你的指令（内部）的元素嵌入到你的（模板）中去，默认为false。如果你需要的话，那么就需要将transclude设置为true。如果将这个值设置为true的话，就要配合angular的ng-transclude指令来进行使用，
 
 代码实现？1.html中的代码1">
-<meta property="og:updated_time" content="2016-11-17T02:56:23.451Z">
+<meta property="og:updated_time" content="2016-11-17T03:01:32.825Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="angularjs中的transclude及ng-transclude">
 <meta name="twitter:description" content="title: transclude及ng-transclude
@@ -125,8 +125,6 @@ transclude？嵌入的意思,也就是说你是否需要将你的指令（内部
 <p>2.js中的代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">myApp.directive(&apos;breadcrumb&apos;, [&apos;$parse&apos;, function($parse) &#123;</div><div class="line">		return &#123;</div><div class="line">			templateUrl: &apos;tmpls/breadcrumb.html&apos;,</div><div class="line">            transclude:true</div><div class="line">		&#125;</div><div class="line">&#125;]);</div></pre></td></tr></table></figure></p>
 <p>3.tmpls/breadcrumb.html模板中的代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;ol&gt;</div><div class="line">  &lt;li&gt;</div><div class="line">  	&lt;a href=&quot;#&quot; ng-transclude&gt;模板1&lt;/a&gt;</div><div class="line">  	&lt;a href=&quot;#&quot;&gt;模板2&lt;/a&gt;</div><div class="line">  &lt;/li&gt;</div><div class="line">&lt;/ol&gt;</div></pre></td></tr></table></figure></p>
 <p>备注：<strong><em> 模板由两部分组成，一部分是含有ng-transclude指令的，一部分是不含有这个指令的 </em></strong></p>
-<p><strong><em> 最后的结果是 </em></strong></p>
-<p>(<a href="https://blog.yoyoyuan.top/img/transclude.png" target="_blank" rel="external">https://blog.yoyoyuan.top/img/transclude.png</a>)</p>
 <hr>
   
 	</div>
