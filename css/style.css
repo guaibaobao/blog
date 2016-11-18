@@ -414,7 +414,7 @@ body >header >div {
 }
 body >header a {
   display: block;
-  color: #fff;
+  color: #80e94c;
 }
 #imglogo {
   float: left;
@@ -560,7 +560,7 @@ header nav ul li a:hover {
   font-size: 0.87em;
   line-height: 1.7;
   border: 1px solid #fff;
-  color: #fff;
+  color: #80e94c;
   background: transparent;
   width: 80%;
   padding-left: 0.5em;
