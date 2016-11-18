@@ -118,7 +118,7 @@ a img {
   -webkit-margin-after: 0;
 }
 body {
-  background: #ddd;
+  background: #fdf;
   font-family: "Helvetica Neue", "Helvetica", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif;
   font-size: 100%;
   color: #817c7c;
@@ -387,9 +387,6 @@ input[type="search"]::-webkit-search-decoration {
     -ms-transform: translateY(0);
     transform: translateY(0);
   }
-}
-body {
-  background: #fdf;
 }
 body >header {
   width: 100%;
@@ -686,7 +683,7 @@ header nav ul li a:hover {
   line-height: 1em;
   padding: 6px 15px;
   border-radius: 15px;
-  background: #ddd;
+  background: #fdf;
   color: #817c7c;
   text-decoration: none;
 }
