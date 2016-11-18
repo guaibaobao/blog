@@ -388,6 +388,9 @@ input[type="search"]::-webkit-search-decoration {
     transform: translateY(0);
   }
 }
+body {
+  background: #fdf;
+}
 body >header {
   width: 100%;
   -webkit-box-shadow: 2px 4px 5px rgba(3,3,3,0.2);
