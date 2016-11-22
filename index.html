@@ -78,6 +78,122 @@
         <header class="article-info clearfix">
   <h1 itemprop="name">
     
+      <a href="/blog/2016/11/22/Bootstrap简介和基础知识/" title="Bootstrap简介和基础知识" itemprop="url">Bootstrap简介和基础知识</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/blog/about" title="baobao" target="_blank" itemprop="author">baobao</a>
+		
+  <p class="article-time">
+    <time datetime="2016-11-22T07:32:02.000Z" itemprop="datePublished"> Published 2016-11-22</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <h1 id="Bootstap简介和基础知识"><a href="#Bootstap简介和基础知识" class="headerlink" title="Bootstap简介和基础知识"></a>Bootstap简介和基础知识</h1><hr>
+<p>Bootstap是当下最流行的前端框架（界面工具集）<br>前端：与用户尽心交互的终端。<br>框架：把大家需要的功能预先写好。</p>
+<h3 id="Bootstrap简介："><a href="#Bootstrap简介：" class="headerlink" title="Bootstrap简介："></a>Bootstrap简介：</h3><blockquote>
+<ul>
+<li>让web开发更简单，更快捷；</li>
+<li>特点：灵活简单，代码优雅，美观大方；</li>
+</ul>
+</blockquote>
+<p> 为什么使用Bootstrap?</p>
+<blockquote>
+<ul>
+<li>生态圈火，不断地更新迭代；（迭代：更新上线）</li>
+<li>提供了一套美观大方的界面组件；</li>
+<li>提供一套优雅的HTML+CSS编码规范；</li>
+<li>让web开发更简单，更快捷；</li>
+</ul>
+</blockquote>
+<h3 id="版本说明："><a href="#版本说明：" class="headerlink" title="版本说明："></a>版本说明：</h3><blockquote>
+<ul>
+<li>Alpha版: 此版本表示该软件在此阶段主要是以实现软件功能为主，通常只在软件开发者内部交流，一般而言，该版本软件的 Bug(程序缺陷) 较多，需要继续修改。</li>
+<li>Beta版: 该版本相对于 α版已有了很大的改进，消除了严重的错误，但还是存在着一些缺陷，需要经过多次测试来进一步消除，此版本主要的修改对像是软件的UI。</li>
+<li>RC版: (release candidate)该版本已经相当成熟了，基本上 不存在导致错误 的BUG，与即将发行的正式版相差无几。</li>
+<li>Release版: 该版本意味 “最终版本” ，在前面版本的一系列测试版之后，终归会有一个正式版本，是最终交付用户使用的一个版本。该版本有时也称为标准版。一般情况下， Release不会以单词形式出现在软件封面上，取而代之的是符号(R)。</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="HTML中的视口："><a href="#HTML中的视口：" class="headerlink" title="HTML中的视口："></a>HTML中的视口：</h3><blockquote>
+<ul>
+<li>视口的作用：<br>在移动浏览器中，当页面宽度超出设备，浏览器内部虚拟的一个页面容器，将页面容器缩放到设备这么大，然后展示。</li>
+<li>目前大多数手机浏览器的视口（承载页面的容器）宽度都是980；</li>
+<li>此属性为移动端页面视口设置，当前值表示在移动端页面的宽度为设备的宽度，并且不缩放（缩放级别为1）</li>
+</ul>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">+ width:视口的宽度</div><div class="line">         + initial-scale：初始化缩放</div><div class="line">         + user-scalable:是否允许用户自行缩放（值：yes/no; <span class="number">1</span>/<span class="number">0</span>）</div><div class="line">         + minimum-scale:最小缩放，一般设置了用户不允许缩放，就没必要设置最小和最大缩放</div><div class="line">         + maximum-scale:最大缩放</div><div class="line"></div><div class="line">               &lt;meta name=<span class="string">"viewport"</span> content=<span class="string">"width=device-width, initial-scale=1,use-sacalable=no"</span>&gt;</div></pre></td></tr></table></figure>
+<h3 id="5-条件注释"><a href="#5-条件注释" class="headerlink" title="5. 条件注释"></a>5. 条件注释</h3><blockquote>
+<ul>
+<li>作用: 条件注释的作用就是当判断条件满足时，就会执行注释中的HTML代码，不满足时就会到当作注释忽略掉。<pre><code>&lt;!--[if IE]&gt; Only IE &lt;![endif]--&gt;
+   所有的IE可识别
+  &lt;!--[if IE 5.0]&gt; Only IE 5.0 &lt;![endif]--&gt;
+</code></pre></li>
+</ul>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">只有IE5.0可以识别</div><div class="line">        &lt;!--[if gt IE 5.0]&gt; Only IE 5.0+ &lt;![endif]--&gt;</div><div class="line">            高于IE5.0都可以识别</div><div class="line">        &lt;!--[if lt IE 6]&gt; Only IE 6- &lt;![endif]--&gt;</div><div class="line">            低于IE6可识别</div><div class="line">        &lt;!--[if gte IE 6]&gt; Only IE 6/+ &lt;![endif]--&gt;</div><div class="line">            IE6以及IE6以上都可识别</div><div class="line">        &lt;!--[if lte IE 7]&gt; Only IE 7/- &lt;![endif]--&gt;</div><div class="line">            IE7及ie7以下版本可识别</div><div class="line">    &lt;!--[if (gte IE 8)|!(IE)]&gt;Only IE8/+&lt;!--&lt;![endif]--&gt;</div><div class="line">  &lt;!--[if !IE]--&gt;我不是IE浏览器&lt;!-- &lt;![endif]--&gt;</div><div class="line"></div><div class="line">        大于等于ie8或者非ie浏览器</div></pre></td></tr></table></figure>
+<h3 id="6-注意事项"><a href="#6-注意事项" class="headerlink" title="6. 注意事项"></a>6. 注意事项</h3><blockquote>
+<ul>
+<li>自己写的CSS样式一般都放到head的最后面，以便容易覆盖原有的样式</li>
+<li>Bootstrap的所有的js组件都是依赖jQuery的</li>
+</ul>
+</blockquote>
+<h3 id="从零开始使用Bootstrap"><a href="#从零开始使用Bootstrap" class="headerlink" title="从零开始使用Bootstrap"></a>从零开始使用Bootstrap</h3><blockquote>
+<ul>
+<li><p>字体样式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">body &#123;</div><div class="line">          font-family: &quot;Helvetica Neue&quot;, Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;</div><div class="line"></div><div class="line">        &#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>使用自定义web字体</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">@font-face &#123;</div><div class="line">    font-family: &apos;renren&apos;;</div><div class="line">    src:url(&apos;../font/MiFie-Web-Font.eot&apos;) format(&apos;embedded-opentype&apos;),</div><div class="line">        url(&apos;../font/MiFie-Web-Font.svg&apos;) format(&apos;svg&apos;),</div><div class="line">        url(&apos;../font/MiFie-Web-Font.ttf&apos;) format(&apos;truetype&apos;),</div><div class="line">        url(&apos;../font/MiFie-Web-Font.woff&apos;) format(&apos;woff&apos;);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>字体格式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">- eot : embedded-opentype</div><div class="line">- svg : svg</div><div class="line">- ttf : truetype</div><div class="line">- woff : woff</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<h3 id="加号选择器（相邻兄弟选择器）"><a href="#加号选择器（相邻兄弟选择器）" class="headerlink" title="加号选择器（相邻兄弟选择器）"></a>加号选择器（相邻兄弟选择器）</h3><blockquote>
+<ul>
+<li>相邻兄弟选择器的定义是：可以选择 紧接在另一个元素后的元素， 并且这两个元素都有同样的父元素。由此可见，关键的两个条件是“紧 接在”和“ 同一父元素 ”。</li>
+</ul>
+</blockquote>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
       <a href="/blog/2016/11/22/JavaScript基础小结/" title="JavaScript基础小结" itemprop="url">JavaScript基础小结</a>
   </h1>
   <p class="article-author">By
@@ -1326,62 +1442,6 @@ jq = numa + 30 &gt; 10 &amp;&amp; munb *3 &lt;2;  //结果为false</code></p>
 <p><li>foo</li></p>
 <p><li>bar</li><br><br>你可以选中并迭代这些列表：<br>复制代码 代码如下:</p>
 <p>$( “li” ).each(function( index ) {<br>console.log( index + “: “” + $(this).text() );<br>});<br>列表中每一项会显示在下面的消息中：<br>0: foo<br>1: bar<br>两者的区别<br>map()方法主要用来遍历操作数组和对象，each()主要用于遍历jquery对象。<br>each()返回的是原来的数组，并不会新创建一个数组。<br>map()方法会返回一个新的数组。如果在没有必要的情况下使用map，则有可能造成内存浪费。</p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/blog/2016/10/26/CSS3小结/" title="CSS3小结" itemprop="url">CSS3小结</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/blog/about" title="baobao" target="_blank" itemprop="author">baobao</a>
-		
-  <p class="article-time">
-    <time datetime="2016-10-26T13:48:02.000Z" itemprop="datePublished"> Published 2016-10-26</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <hr>
-<h2 id="title-css3-弹性盒子模型"><a href="#title-css3-弹性盒子模型" class="headerlink" title="title: css3 弹性盒子模型"></a>title: css3 弹性盒子模型</h2><p>文章涵盖css3中文字阴影,文字描边,弹性盒子模型,盒模型新增属性,其他的盒模型属性,CSS3分栏布局</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><h3 id="文字阴影"><a href="#文字阴影" class="headerlink" title="文字阴影"></a>文字阴影</h3><p>text-shadow：x y blur color</p>
-<h3 id="文字描边"><a href="#文字描边" class="headerlink" title="文字描边"></a>文字描边</h3><p>-webkit-text-stroke:宽度 颜色</p>
-<h3 id="弹性盒子模型"><a href="#弹性盒子模型" class="headerlink" title="弹性盒子模型"></a>弹性盒子模型</h3><p>注意在使用弹性盒模型的时候 父元素必须要加display:flex或<br>display:inline-box（需要加内核前缀）<br>box-orient 定义盒模型的布局方向<br>box-direction 元素排列顺序<br>box-ordinal-group 设置元素的具体位置</p>
-<h3 id="盒模型新增属性"><a href="#盒模型新增属性" class="headerlink" title="盒模型新增属性"></a>盒模型新增属性</h3><p>box-shadow:[inset] x y blur [spread] color<br>参数<br>inset：投影方式<br>inset：内投影<br>不给：外投影<br>x、y：阴影偏移<br>blur：模糊半径<br>spread：扩展阴影半径<br>先扩展原有形状，再开始画阴影<br>Color</p>
-<h3 id="其他的盒模型属性"><a href="#其他的盒模型属性" class="headerlink" title="其他的盒模型属性"></a>其他的盒模型属性</h3><p>box-reflect 倒影<br>direction  方向     above|below|left|right;<br>距离<br>渐变（可选，后面讲）<br>resize 自由缩放<br>Both 水平垂直都可以缩放<br>Horizontal 只有水平方向可以缩放<br>Vertical 只有垂直方向可以缩放<br>注意：一定要配合overflow:auto 一块使用只有水平方向可以缩放<br>box-sizing 盒模型解析模式<br>Content-box  标准盒模型 width/height=border+padding+content<br>Border-box 怪异盒模型 width/height=content</p>
 
         
         

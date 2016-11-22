@@ -1,0 +1,548 @@
+
+ <!DOCTYPE HTML>
+<html >
+<head>
+  <meta charset="UTF-8">
+  
+    <title>Bootstrap简介和基础知识 | guaibaobao&#39;s blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="baobao">
+    
+
+    
+    <meta name="description" content="Bootstap简介和基础知识
+Bootstap是当下最流行的前端框架（界面工具集）前端：与用户尽心交互的终端。框架：把大家需要的功能预先写好。
+Bootstrap简介：
+
+让web开发更简单，更快捷；
+特点：灵活简单，代码优雅，美观大方；
+
+
+ 为什么使用Bootstrap?
+
+
+生态圈火，不断地更新迭代；（迭代：更新上线）
+提供了一套美观大方的界面组件；
+提供一套优雅的HTML+CSS编码规范">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Bootstrap简介和基础知识">
+<meta property="og:url" content="http://yoursite.com/2016/11/22/Bootstrap简介和基础知识/index.html">
+<meta property="og:site_name" content="guaibaobao's blog">
+<meta property="og:description" content="Bootstap简介和基础知识
+Bootstap是当下最流行的前端框架（界面工具集）前端：与用户尽心交互的终端。框架：把大家需要的功能预先写好。
+Bootstrap简介：
+
+让web开发更简单，更快捷；
+特点：灵活简单，代码优雅，美观大方；
+
+
+ 为什么使用Bootstrap?
+
+
+生态圈火，不断地更新迭代；（迭代：更新上线）
+提供了一套美观大方的界面组件；
+提供一套优雅的HTML+CSS编码规范">
+<meta property="og:updated_time" content="2016-11-22T07:32:54.392Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Bootstrap简介和基础知识">
+<meta name="twitter:description" content="Bootstap简介和基础知识
+Bootstap是当下最流行的前端框架（界面工具集）前端：与用户尽心交互的终端。框架：把大家需要的功能预先写好。
+Bootstrap简介：
+
+让web开发更简单，更快捷；
+特点：灵活简单，代码优雅，美观大方；
+
+
+ 为什么使用Bootstrap?
+
+
+生态圈火，不断地更新迭代；（迭代：更新上线）
+提供了一套美观大方的界面组件；
+提供一套优雅的HTML+CSS编码规范">
+
+    
+    <link rel="alternative" href="/atom.xml" title="guaibaobao&#39;s blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/blog/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/blog/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/blog/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/blog/css/style.css">
+</head>
+
+  <body style="background:#fdf">
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/blog/"><img src="/blog/img/logo.png" alt="guaibaobao&#39;s blog" title="guaibaobao&#39;s blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/blog/" title="guaibaobao&#39;s blog">guaibaobao&#39;s blog</a></h1>
+				<h2 class="blog-motto"></h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/blog/">Home</a></li>
+					
+						<li><a href="/blog/archives">Archives</a></li>
+					
+						<li><a href="/blog/about">About</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
+						<input type="hidden" name="q" value="site:yoursite.com">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/blog/2016/11/22/Bootstrap简介和基础知识/" title="Bootstrap简介和基础知识" itemprop="url">Bootstrap简介和基础知识</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/blog/about" title="baobao" target="_blank" itemprop="author">baobao</a>
+		
+  <p class="article-time">
+    <time datetime="2016-11-22T07:32:02.000Z" itemprop="datePublished"> Published 2016-11-22</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">Contents</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Bootstap简介和基础知识"><span class="toc-number">1.</span> <span class="toc-text">Bootstap简介和基础知识</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Bootstrap简介："><span class="toc-number">1.0.1.</span> <span class="toc-text">Bootstrap简介：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#版本说明："><span class="toc-number">1.0.2.</span> <span class="toc-text">版本说明：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HTML中的视口："><span class="toc-number">1.0.3.</span> <span class="toc-text">HTML中的视口：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-条件注释"><span class="toc-number">1.0.4.</span> <span class="toc-text">5. 条件注释</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-注意事项"><span class="toc-number">1.0.5.</span> <span class="toc-text">6. 注意事项</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#从零开始使用Bootstrap"><span class="toc-number">1.0.6.</span> <span class="toc-text">从零开始使用Bootstrap</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#加号选择器（相邻兄弟选择器）"><span class="toc-number">1.0.7.</span> <span class="toc-text">加号选择器（相邻兄弟选择器）</span></a></li></ol></li></ol></li></ol>
+		
+		</div>
+		
+		<h1 id="Bootstap简介和基础知识"><a href="#Bootstap简介和基础知识" class="headerlink" title="Bootstap简介和基础知识"></a>Bootstap简介和基础知识</h1><hr>
+<p>Bootstap是当下最流行的前端框架（界面工具集）<br>前端：与用户尽心交互的终端。<br>框架：把大家需要的功能预先写好。</p>
+<h3 id="Bootstrap简介："><a href="#Bootstrap简介：" class="headerlink" title="Bootstrap简介："></a>Bootstrap简介：</h3><blockquote>
+<ul>
+<li>让web开发更简单，更快捷；</li>
+<li>特点：灵活简单，代码优雅，美观大方；</li>
+</ul>
+</blockquote>
+<p> 为什么使用Bootstrap?</p>
+<blockquote>
+<ul>
+<li>生态圈火，不断地更新迭代；（迭代：更新上线）</li>
+<li>提供了一套美观大方的界面组件；</li>
+<li>提供一套优雅的HTML+CSS编码规范；</li>
+<li>让web开发更简单，更快捷；</li>
+</ul>
+</blockquote>
+<h3 id="版本说明："><a href="#版本说明：" class="headerlink" title="版本说明："></a>版本说明：</h3><blockquote>
+<ul>
+<li>Alpha版: 此版本表示该软件在此阶段主要是以实现软件功能为主，通常只在软件开发者内部交流，一般而言，该版本软件的 Bug(程序缺陷) 较多，需要继续修改。</li>
+<li>Beta版: 该版本相对于 α版已有了很大的改进，消除了严重的错误，但还是存在着一些缺陷，需要经过多次测试来进一步消除，此版本主要的修改对像是软件的UI。</li>
+<li>RC版: (release candidate)该版本已经相当成熟了，基本上 不存在导致错误 的BUG，与即将发行的正式版相差无几。</li>
+<li>Release版: 该版本意味 “最终版本” ，在前面版本的一系列测试版之后，终归会有一个正式版本，是最终交付用户使用的一个版本。该版本有时也称为标准版。一般情况下， Release不会以单词形式出现在软件封面上，取而代之的是符号(R)。</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="HTML中的视口："><a href="#HTML中的视口：" class="headerlink" title="HTML中的视口："></a>HTML中的视口：</h3><blockquote>
+<ul>
+<li>视口的作用：<br>在移动浏览器中，当页面宽度超出设备，浏览器内部虚拟的一个页面容器，将页面容器缩放到设备这么大，然后展示。</li>
+<li>目前大多数手机浏览器的视口（承载页面的容器）宽度都是980；</li>
+<li>此属性为移动端页面视口设置，当前值表示在移动端页面的宽度为设备的宽度，并且不缩放（缩放级别为1）</li>
+</ul>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">+ width:视口的宽度</div><div class="line">         + initial-scale：初始化缩放</div><div class="line">         + user-scalable:是否允许用户自行缩放（值：yes/no; <span class="number">1</span>/<span class="number">0</span>）</div><div class="line">         + minimum-scale:最小缩放，一般设置了用户不允许缩放，就没必要设置最小和最大缩放</div><div class="line">         + maximum-scale:最大缩放</div><div class="line"></div><div class="line">               &lt;meta name=<span class="string">"viewport"</span> content=<span class="string">"width=device-width, initial-scale=1,use-sacalable=no"</span>&gt;</div></pre></td></tr></table></figure>
+<h3 id="5-条件注释"><a href="#5-条件注释" class="headerlink" title="5. 条件注释"></a>5. 条件注释</h3><blockquote>
+<ul>
+<li>作用: 条件注释的作用就是当判断条件满足时，就会执行注释中的HTML代码，不满足时就会到当作注释忽略掉。<pre><code>&lt;!--[if IE]&gt; Only IE &lt;![endif]--&gt;
+   所有的IE可识别
+  &lt;!--[if IE 5.0]&gt; Only IE 5.0 &lt;![endif]--&gt;
+</code></pre></li>
+</ul>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">只有IE5.0可以识别</div><div class="line">        &lt;!--[if gt IE 5.0]&gt; Only IE 5.0+ &lt;![endif]--&gt;</div><div class="line">            高于IE5.0都可以识别</div><div class="line">        &lt;!--[if lt IE 6]&gt; Only IE 6- &lt;![endif]--&gt;</div><div class="line">            低于IE6可识别</div><div class="line">        &lt;!--[if gte IE 6]&gt; Only IE 6/+ &lt;![endif]--&gt;</div><div class="line">            IE6以及IE6以上都可识别</div><div class="line">        &lt;!--[if lte IE 7]&gt; Only IE 7/- &lt;![endif]--&gt;</div><div class="line">            IE7及ie7以下版本可识别</div><div class="line">    &lt;!--[if (gte IE 8)|!(IE)]&gt;Only IE8/+&lt;!--&lt;![endif]--&gt;</div><div class="line">  &lt;!--[if !IE]--&gt;我不是IE浏览器&lt;!-- &lt;![endif]--&gt;</div><div class="line"></div><div class="line">        大于等于ie8或者非ie浏览器</div></pre></td></tr></table></figure>
+<h3 id="6-注意事项"><a href="#6-注意事项" class="headerlink" title="6. 注意事项"></a>6. 注意事项</h3><blockquote>
+<ul>
+<li>自己写的CSS样式一般都放到head的最后面，以便容易覆盖原有的样式</li>
+<li>Bootstrap的所有的js组件都是依赖jQuery的</li>
+</ul>
+</blockquote>
+<h3 id="从零开始使用Bootstrap"><a href="#从零开始使用Bootstrap" class="headerlink" title="从零开始使用Bootstrap"></a>从零开始使用Bootstrap</h3><blockquote>
+<ul>
+<li><p>字体样式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">body &#123;</div><div class="line">          font-family: &quot;Helvetica Neue&quot;, Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;</div><div class="line"></div><div class="line">        &#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>使用自定义web字体</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">@font-face &#123;</div><div class="line">    font-family: &apos;renren&apos;;</div><div class="line">    src:url(&apos;../font/MiFie-Web-Font.eot&apos;) format(&apos;embedded-opentype&apos;),</div><div class="line">        url(&apos;../font/MiFie-Web-Font.svg&apos;) format(&apos;svg&apos;),</div><div class="line">        url(&apos;../font/MiFie-Web-Font.ttf&apos;) format(&apos;truetype&apos;),</div><div class="line">        url(&apos;../font/MiFie-Web-Font.woff&apos;) format(&apos;woff&apos;);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>字体格式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">- eot : embedded-opentype</div><div class="line">- svg : svg</div><div class="line">- ttf : truetype</div><div class="line">- woff : woff</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<h3 id="加号选择器（相邻兄弟选择器）"><a href="#加号选择器（相邻兄弟选择器）" class="headerlink" title="加号选择器（相邻兄弟选择器）"></a>加号选择器（相邻兄弟选择器）</h3><blockquote>
+<ul>
+<li>相邻兄弟选择器的定义是：可以选择 紧接在另一个元素后的元素， 并且这两个元素都有同样的父元素。由此可见，关键的两个条件是“紧 接在”和“ 同一父元素 ”。</li>
+</ul>
+</blockquote>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/blog/2016/11/22/Bootstrap简介和基础知识/" data-title="Bootstrap简介和基础知识 | guaibaobao&#39;s blog" data-tsina="null" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+
+<div class="next">
+<a href="/blog/2016/11/22/JavaScript基础小结/"  title="JavaScript基础小结">
+ <strong>下一篇：</strong><br/> 
+ <span>JavaScript基础小结
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">Contents</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Bootstap简介和基础知识"><span class="toc-number">1.</span> <span class="toc-text">Bootstap简介和基础知识</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Bootstrap简介："><span class="toc-number">1.0.1.</span> <span class="toc-text">Bootstrap简介：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#版本说明："><span class="toc-number">1.0.2.</span> <span class="toc-text">版本说明：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HTML中的视口："><span class="toc-number">1.0.3.</span> <span class="toc-text">HTML中的视口：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-条件注释"><span class="toc-number">1.0.4.</span> <span class="toc-text">5. 条件注释</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-注意事项"><span class="toc-number">1.0.5.</span> <span class="toc-text">6. 注意事项</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#从零开始使用Bootstrap"><span class="toc-number">1.0.6.</span> <span class="toc-text">从零开始使用Bootstrap</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#加号选择器（相邻兄弟选择器）"><span class="toc-number">1.0.7.</span> <span class="toc-text">加号选择器（相邻兄弟选择器）</span></a></li></ol></li></ol></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+
+  
+<div class="github-card">
+<p class="asidetitle">Github Card</p>
+<div class="github-card" data-github="https://github.com/guaibaobao" data-width="220" data-height="119" data-theme="medium">
+<script type="text/javascript" src="//cdn.jsdelivr.net/github-cards/latest/widget.js" ></script>
+</div>
+  </div>
+
+
+
+  
+
+  
+
+  <div class="linkslist">
+  <p class="asidetitle">Links</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="https://github.com/guaibaobao/blog" target="_blank" title="一个面向程序员交流分享的新一代社区">码农圈</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="https://guaibaobao.github.io/blog/" target="_blank" title="baobao&#39;s Blog">baobao&#39;s Blog</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">Weibo</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=null&verifier=&dpc=1"></iframe>
+</div>
+
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m baobao . <br/>
+			This is my blog,believe it or not.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		
+		<a href="https://github.com/https://github.com/guaibaobao" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<a href="mailto:1551258332@qq.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2016 
+		
+		<a href="/blog/about" target="_blank" title="baobao">baobao</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/blog/js/jquery-2.0.3.min.js"></script>
+<script src="/blog/js/jquery.imagesloaded.min.js"></script>
+<script src="/blog/js/gallery.js"></script>
+<script src="/blog/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/blog/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/blog/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?e6d1f421bbc9962127a50488f9ed37d1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="Back to Top"><img src="/blog/img/scrollup.png"/></a>
+	</div>
+	<script src="/blog/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>
