@@ -44,7 +44,7 @@
 				<h1 class="site-name"><a href="/blog/" title="guaibaobao&#39;s blog">guaibaobao&#39;s blog</a></h1>
 				<h2 class="blog-motto"></h2>
 			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
 			</a></div>
 			<nav class="animated">
 				<ul>
@@ -60,7 +60,7 @@
  					
 					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
 						<label>Search</label>
-						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
 						<input type="hidden" name="q" value="site:yoursite.com">
 					</form>
 					
@@ -78,6 +78,137 @@
         <header class="article-info clearfix">
   <h1 itemprop="name">
     
+      <a href="/blog/2016/10/15/React小结/" title="React小结" itemprop="url">React小结</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/blog/about" title="baobao" target="_blank" itemprop="author">baobao</a>
+		
+  <p class="article-time">
+    <time datetime="2016-10-15T15:12:01.000Z" itemprop="datePublished"> Published 2016-10-15</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <h1 id="React"><a href="#React" class="headerlink" title="React"></a>React</h1><p>谈谈自己对React的浅了解，大致阅读了一些关于React的文章，来总结点笔记留给以后的自己。</p>
+<ul>
+<li>React是facebook开源的一个用于构建用户界面的javascript库，应用时总从UI出发</li>
+<li>顺应了web开发组件化的趋势</li>
+<li>专注于MVC架构中的V视图。（React会自动处理所有用户页面更新）</li>
+</ul>
+<p>节点小热身:</p>
+<ul>
+<li>React是为了解决：构建随着时间数据不断变化的大规模应用程序。</li>
+<li><p>为什么要用虚拟DOM？</p>
+<p>答：因为在用js操作DOM的过程中效率非常低（Js对虚拟DOM操作是对DOM进行操作和之    前的虚拟DOM对象进行比较形成新的虚拟DOM）</p>
+</li>
+</ul>
+<p>React的[安装] 和 [语法] </p>
+<h3 id="1-在之前安装的Webpack的基础上，在原来文件中打开命令窗口"><a href="#1-在之前安装的Webpack的基础上，在原来文件中打开命令窗口" class="headerlink" title="1.在之前安装的Webpack的基础上，在原来文件中打开命令窗口"></a>1.在之前安装的Webpack的基础上，在原来文件中打开命令窗口</h3><p>输入指令npm install  –save-dev   react;</p>
+<p>  npm install –save-dev  react-dom</p>
+<h3 id="2-在publish文件下：创建一个index-html并编辑其内容为："><a href="#2-在publish文件下：创建一个index-html并编辑其内容为：" class="headerlink" title="2.在publish文件下：创建一个index.html并编辑其内容为："></a>2.在publish文件下：创建一个index.html并编辑其内容为：</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;script  <span class="built_in">type</span>=<span class="string">"text/javascript"</span> src=<span class="string">"node-module/dist/react.min.js"</span>&gt;&lt;/scrpt&gt;</div><div class="line">        &lt;script  <span class="built_in">type</span>=<span class="string">"text/javascript"</span> src=<span class="string">"node-module/dist/react-dom.min.js"</span>&gt;&lt;/scrpt&gt;</div><div class="line">        &lt;script  <span class="built_in">type</span>=<span class="string">"text/javascript"</span> src=<span class="string">"https://unpkg.com/babel-core@5.8.38/browser.min.js"</span>&gt;&lt;/scrpt&gt;（这个网址是在线解析的引用）</div><div class="line">         &lt;script  <span class="built_in">type</span>=<span class="string">"text/babel"</span>&gt;</div><div class="line">                 ReactDOM.render(</div><div class="line">                            &lt;div&gt;Hello World&lt;/div&gt;,</div><div class="line">                            document.getElementById(<span class="string">"demo"</span>)</div><div class="line">                  ); </div><div class="line">         &lt;/scrpt&gt;</div><div class="line">   说明：render中的第一个参数是：组件名，第二个参数是：DOM容器。</div></pre></td></tr></table></figure>
+<p>创建组件时：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&lt;script  <span class="built_in">type</span>=<span class="string">"text/babel"</span>&gt;</div><div class="line">                         class Hello extends React.Component&#123;</div><div class="line">                                   <span class="function"><span class="title">render</span></span>( )&#123;</div><div class="line">                                             <span class="built_in">return</span> &lt;div&gt;Hello World&lt;/div&gt;;</div><div class="line">                                   &#125;</div><div class="line">                         &#125;</div><div class="line">               ReactDOM.render(</div><div class="line">                         &lt;Hello/&gt;,//自闭合标签</div><div class="line">                         document.getElementById(<span class="string">"demo"</span>)</div><div class="line">               );</div><div class="line">          &lt;/script&gt;</div></pre></td></tr></table></figure>
+<p>jsx的语法规则：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">  在src目录下的js文件下的component文件下创建World.jsx文件并编辑为：</div><div class="line">    import React from <span class="string">"react"</span>;</div><div class="line">     import ReactDOM from <span class="string">"react-dom"</span>;</div><div class="line">     <span class="built_in">export</span> default class Hello extends React.Component&#123;</div><div class="line">    <span class="function"><span class="title">render</span></span>()&#123;</div><div class="line">            <span class="built_in">return</span> &lt;div&gt;World&lt;/div&gt;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">在app.js中写入：</div><div class="line">import React from <span class="string">"react"</span>;</div><div class="line">import ReactDOM from <span class="string">"react-dom"</span>;</div><div class="line">import Hello from <span class="string">'./src/js/component/World.jsx'</span></div><div class="line">ReactDOM.render(</div><div class="line">        &lt;Hello/&gt;,</div><div class="line">        document.getElementById(<span class="string">"dukewei"</span>)</div><div class="line">    )</div><div class="line">   最后在命令窗口输入：npm run develop</div></pre></td></tr></table></figure></p>
+<p>组件的生命周期（状态回调）：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div></pre></td><td class="code"><pre><div class="line">在component目录下建个YaPing文件夹再其下建YaPing.jsx并写入：</div><div class="line">                                       import React from <span class="string">'react'</span>;</div><div class="line"><span class="built_in">let</span> initValue = <span class="string">'幸运女生。。。'</span>;</div><div class="line"><span class="built_in">export</span> default class YaPing extends React.Component&#123;</div><div class="line">    <span class="function"><span class="title">getInitDefaultProps</span></span>()&#123;</div><div class="line">            console.log(<span class="string">"123123"</span>);</div><div class="line">    &#125;</div><div class="line">    <span class="function"><span class="title">getInitState</span></span>()&#123;</div><div class="line">            console.log(<span class="string">"456456"</span>);</div><div class="line">    &#125;</div><div class="line">    <span class="function"><span class="title">componentWillMount</span></span>() &#123;</div><div class="line">        console.log(<span class="string">'即将开始美丽的童话。。。'</span>);</div><div class="line">    &#125;</div><div class="line">    <span class="function"><span class="title">componentDidMount</span></span>() &#123;</div><div class="line">        console.log(<span class="string">'童话世界里的公主。。。'</span>);  </div><div class="line">    &#125;</div><div class="line">    shouldComponentUpdate(nextProps,nextState)&#123;</div><div class="line">        initValue:<span class="string">"童话里都是骗人的。。。"</span>;</div><div class="line">        console.log(<span class="string">"你不可能是我的王子！！！"</span>);</div><div class="line">        <span class="built_in">return</span> <span class="literal">true</span>;</div><div class="line">    &#125;</div><div class="line">    myClick = () =&gt;&#123;</div><div class="line">        this.setState(&#123;happy:<span class="string">"meet you..."</span>&#125;);</div><div class="line">        console.log(<span class="string">'遇见最美的你'</span>);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="title">render</span></span>()&#123;</div><div class="line">        <span class="built_in">return</span> &lt;p&gt;&lt;span onClick=&#123;this.myClick&#125;&gt;&#123;initValue&#125;&lt;/span&gt;&lt;/p&gt;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;;</div><div class="line">编辑app.js:</div><div class="line"></div><div class="line">                                                  import React from <span class="string">"react"</span>;</div><div class="line">import ReactDOM from <span class="string">"react-dom"</span>;</div><div class="line">import YaPing from <span class="string">'./src/js/component/YaPing/YaPing.jsx'</span>;</div><div class="line">ReactDOM.render(</div><div class="line">        &lt;div&gt;&lt;YaPing/&gt;&lt;/div&gt;,</div><div class="line">        document.getElementById(<span class="string">"dukewei"</span>)</div><div class="line">);</div><div class="line">最后在命令窗口输入：npm run develop</div></pre></td></tr></table></figure></p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">以上纯属个人见解,仅供参考。。。</div></pre></td></tr></table></figure>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/blog/2016/10/13/hello-everyone/" title="hello-everyone" itemprop="url">hello-everyone</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/blog/about" title="baobao" target="_blank" itemprop="author">baobao</a>
+		
+  <p class="article-time">
+    <time datetime="2016-10-13T15:03:57.000Z" itemprop="datePublished"> Published 2016-10-13</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <hr>
+<h2 id="title-baobao滴博客"><a href="#title-baobao滴博客" class="headerlink" title="title: baobao滴博客"></a>title: baobao滴博客</h2><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$这两天好累呀！又忙到了现在,不过每天都会有进步,希望未来的自己会比现在向前迈进点。。。我会继续努力的,晚安。。。全世界。</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
       <a href="/blog/2016/10/12/GIT与GitHub以及博客的创建/" title="GIT与GitHub以及博客的创建" itemprop="url">GIT与GitHub以及博客的创建</a>
   </h1>
   <p class="article-author">By
@@ -85,7 +216,7 @@
 		<a href="/blog/about" title="baobao" target="_blank" itemprop="author">baobao</a>
 		
   <p class="article-time">
-    <time datetime="2016-10-12T04:38:30.000Z" itemprop="datePublished"> 发表于 2016-10-12</time>
+    <time datetime="2016-10-12T04:38:30.000Z" itemprop="datePublished"> Published 2016-10-12</time>
     
   </p>
 </header>
@@ -177,7 +308,7 @@ branch: gh-pages
 		<a href="/blog/about" title="baobao" target="_blank" itemprop="author">baobao</a>
 		
   <p class="article-time">
-    <time datetime="2016-10-07T14:48:22.000Z" itemprop="datePublished"> 发表于 2016-10-07</time>
+    <time datetime="2016-10-07T14:48:22.000Z" itemprop="datePublished"> Published 2016-10-07</time>
     
   </p>
 </header>
@@ -237,7 +368,7 @@ branch: gh-pages
 		<a href="/blog/about" title="baobao" target="_blank" itemprop="author">baobao</a>
 		
   <p class="article-time">
-    <time datetime="2016-10-02T02:51:36.000Z" itemprop="datePublished"> 发表于 2016-10-02</time>
+    <time datetime="2016-10-02T02:51:36.000Z" itemprop="datePublished"> Published 2016-10-02</time>
     
   </p>
 </header>
@@ -293,7 +424,7 @@ callback(Callback): 可选参数 请求完成时(不需要是success)的回调�
 		<a href="/blog/about" title="baobao" target="_blank" itemprop="author">baobao</a>
 		
   <p class="article-time">
-    <time datetime="2016-09-29T12:46:04.000Z" itemprop="datePublished"> 发表于 2016-09-29</time>
+    <time datetime="2016-09-29T12:46:04.000Z" itemprop="datePublished"> Published 2016-09-29</time>
     
   </p>
 </header>
@@ -418,7 +549,7 @@ callback(Callback): 可选参数 请求完成时(不需要是success)的回调�
 		<a href="/blog/about" title="baobao" target="_blank" itemprop="author">baobao</a>
 		
   <p class="article-time">
-    <time datetime="2016-09-25T02:43:58.000Z" itemprop="datePublished"> 发表于 2016-09-25</time>
+    <time datetime="2016-09-25T02:43:58.000Z" itemprop="datePublished"> Published 2016-09-25</time>
     
   </p>
 </header>
@@ -509,7 +640,7 @@ callback(Callback): 可选参数 请求完成时(不需要是success)的回调�
 		<a href="/blog/about" title="baobao" target="_blank" itemprop="author">baobao</a>
 		
   <p class="article-time">
-    <time datetime="2016-09-20T02:19:12.000Z" itemprop="datePublished"> 发表于 2016-09-20</time>
+    <time datetime="2016-09-20T02:19:12.000Z" itemprop="datePublished"> Published 2016-09-20</time>
     
   </p>
 </header>
@@ -570,7 +701,7 @@ callback(Callback): 可选参数 请求完成时(不需要是success)的回调�
 		<a href="/blog/about" title="baobao" target="_blank" itemprop="author">baobao</a>
 		
   <p class="article-time">
-    <time datetime="2016-09-17T01:52:28.000Z" itemprop="datePublished"> 发表于 2016-09-17</time>
+    <time datetime="2016-09-17T01:52:28.000Z" itemprop="datePublished"> Published 2016-09-17</time>
     
   </p>
 </header>
@@ -619,15 +750,15 @@ callback(Callback): 可选参数 请求完成时(不需要是success)的回调�
   </nav>
 
 </div>
-      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
 
 <div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
 <aside class="clearfix">
 
   
 <div class="github-card">
-<p class="asidetitle">Github 名片</p>
+<p class="asidetitle">Github Card</p>
 <div class="github-card" data-github="https://github.com/guaibaobao" data-width="220" data-height="119" data-theme="medium">
 <script type="text/javascript" src="//cdn.jsdelivr.net/github-cards/latest/widget.js" ></script>
 </div>
@@ -640,7 +771,7 @@ callback(Callback): 可选参数 请求完成时(不需要是success)的回调�
   
 
   <div class="linkslist">
-  <p class="asidetitle">友情链接</p>
+  <p class="asidetitle">Links</p>
     <ul>
         
           <li>
@@ -662,11 +793,11 @@ callback(Callback): 可选参数 请求完成时(不需要是success)的回调�
 
 
   <div class="rsspart">
-	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
 </div>
 
   <div class="weiboshow">
-  <p class="asidetitle">新浪微博</p>
+  <p class="asidetitle">Weibo</p>
     <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=null&verifier=&dpc=1"></iframe>
 </div>
 
@@ -818,7 +949,7 @@ var _hmt = _hmt || [];
 <!-- Totop Begin -->
 
 	<div id="totop">
-	<a title="返回顶部"><img src="/blog/img/scrollup.png"/></a>
+	<a title="Back to Top"><img src="/blog/img/scrollup.png"/></a>
 	</div>
 	<script src="/blog/js/totop.js"></script>
 
