@@ -127,300 +127,6 @@
         <header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/blog/2016/11/15/JavaScript基础再总结/" title="" itemprop="url"></a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/blog/about" title="baobao" target="_blank" itemprop="author">baobao</a>
-		
-  <p class="article-time">
-    <time datetime="2016-11-14T16:00:00.000Z" itemprop="datePublished"> 发表于 2016-11-15</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <h1 id="Javascript基础小结"><a href="#Javascript基础小结" class="headerlink" title="Javascript基础小结"></a>Javascript基础小结</h1><hr>
-<h3 id="一、变量："><a href="#一、变量：" class="headerlink" title="一、变量："></a>一、变量：</h3><h4 id="1-1、什么是变量？"><a href="#1-1、什么是变量？" class="headerlink" title="1.1、什么是变量？"></a>1.1、什么是变量？</h4><p>从编程角度讲，变量是用于存储某种、某些数值的存储器。可以讲变量看作一个盒子，用来存放物品，物品可以是衣服、玩具、水果。。。等。<br>（也可认为是我们数学上曾学习过得代数，例：a=1,b=2, a+b=c a,b,c均为代数，在函数中就是变量）</p>
-<h4 id="1-2、变量命名："><a href="#1-2、变量命名：" class="headerlink" title="1.2、变量命名："></a>1.2、变量命名：</h4><p>变量命名遵循一定规则<br>1、必须以字母、下划线或美元符号开头，后面可以跟字母、下划线、美元符号和数字。如下:</p>
-<p> 正确:<br>    <code>mysum</code><br>    <code>_mychar</code><br>    <code>$numa1</code><br>    错误:<br>  <code>6num  //开头不能用数字</code><br> <code>%sum //开头不能用除(_ $)外特殊符号,如(%  + /等)</code><br>  <code>sum+num //开头中间不能使用除(_ $)外特殊符号，如(%  + /等)</code></p>
-<p>2.变量名区分大小写，如:A与a是两个不同变量。<br>3.不允许使用JavaScript关键字和保留字做变量名。</p>
-<table>
-<thead>
-<tr>
-<th>关键字</th>
-<th style="text-align:right"></th>
-<th style="text-align:right"></th>
-<th style="text-align:right"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>break</td>
-<td style="text-align:right">else</td>
-<td style="text-align:right">new</td>
-<td style="text-align:right">var</td>
-</tr>
-<tr>
-<td>case</td>
-<td style="text-align:right">finally</td>
-<td style="text-align:right">return</td>
-<td style="text-align:right">void</td>
-</tr>
-<tr>
-<td>catch</td>
-<td style="text-align:right">for</td>
-<td style="text-align:right">switch</td>
-<td style="text-align:right">while</td>
-</tr>
-<tr>
-<td>default</td>
-<td style="text-align:right">if</td>
-<td style="text-align:right">throw</td>
-<td style="text-align:right"></td>
-</tr>
-<tr>
-<td>delete</td>
-<td style="text-align:right">in</td>
-<td style="text-align:right">try</td>
-<td style="text-align:right"></td>
-</tr>
-<tr>
-<td>do</td>
-<td style="text-align:right">instanceof</td>
-<td style="text-align:right">typeof</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<h4 id="1-3、变量声明："><a href="#1-3、变量声明：" class="headerlink" title="1.3、变量声明："></a>1.3、变量声明：</h4><blockquote>
-<ul>
-<li>声明变量方法： var 变量名;</li>
-</ul>
-</blockquote>
-<p>var就相当于找盒子的动作，在JavaScript中是关键字（即保留字），这个关键字的作用是声明变量，并为”变量”准备位置(即内存）。<br>当然，我们可以一次找一个盒子，也可以一次找多个盒子，所以Var还可以一次声明多个变量，变量之间用”,”逗号隔开。<code>var num1,num2 ;</code><br><strong>注意：</strong>变量也可以不声明，直接使用，但为了规范，要先声明，后调用。</p>
-<h4 id="1-4、-变量赋值："><a href="#1-4、-变量赋值：" class="headerlink" title="1.4、 变量赋值："></a>1.4、 变量赋值：</h4><blockquote>
-<ul>
-<li>使用“=”号给变量存储内容（赋值）</li>
-</ul>
-</blockquote>
-<p>例：<code>var mynum = 5; //声明变量mynum并赋值。</code><br>另一种写法：<code>var mynum; //声明变量mynum；
-            mynum = 5;//给变量mynum赋值。</code><br><strong>注:</strong>这里 “=”号的作用是给变量赋值，不是等于号。</p>
-<h4 id="1-5-、-表达式"><a href="#1-5-、-表达式" class="headerlink" title="1.5 、 表达式"></a>1.5 、 表达式</h4><p>Javascript 语句：<code>num  = num + 1 ;</code></p>
-<table>
-<thead>
-<tr>
-<th>num</th>
-<th style="text-align:right">=</th>
-<th style="text-align:center">num + 1</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>变量</td>
-<td style="text-align:right">赋值</td>
-<td style="text-align:center">表达式</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p><strong>串表达式</strong>： (值为字符串)<br><code>&quot;I&quot; + &quot;love&quot; + &quot;you&quot;
- &quot;super&quot; + &quot;mychar&quot;</code><br> <strong>注意：</strong>串表达式中mychar是变量。</p>
-<p><strong>数值表达式</strong>：（值为数值）<br> <code>num + 5*3
-    2+2.5</code><br><strong>注意</strong>：数值表达式中num是变量。</p>
-<p><strong>布尔表达式：</strong> (值为true或flase)<br><code>2 &gt; 3
-num == 5
-num &lt; 60</code><br><strong>注意：</strong>布尔表达式中num是变量。 </p>
-</blockquote>
-<p><strong>任务</strong><br>小明有10元钱，买了一个本，花了5元，小红说:”你剩下的钱加上我的6元钱，就可以买个铅笔盒了。1、定义变量num1,并计算小明剩下多少钱。2、定义变量num2,并计算小红花多少钱买铅笔盒。</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;script type="text/javascript"&gt;</div><div class="line">  var num1 = 10-5;</div><div class="line">  var num2 = num1 + 6;</div><div class="line">  document.write("小明还剩:"+num1+"元"+"&lt;br&gt;");</div><div class="line">  document.write("小红花:"+num2+"元买个铅笔盒");</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
-<h4 id="1-5、-号操作符："><a href="#1-5、-号操作符：" class="headerlink" title="1.5、 +号操作符："></a>1.5、 +号操作符：</h4><p>操作符是用于在javascript中指定一定动作的符号。</p>
-<blockquote>
-<ul>
-<li><p>操作符：<br><code>sum  = numa + numb; //其中“=”和“+”都是操作符。</code><br>JavaScript中还有很多这样的操作符，例如，算术操作符(+、-、*、/等)，比较操作符(&lt;、&gt;、&gt;=、&lt;=等)，逻辑操作符(&amp;&amp;、||、！)。<br>注意: “=” 操作符是赋值，不是等于</p>
-</li>
-<li><p>“+”操作符<br>算术操作符主要用来完成类似加减乘除的工作，在javascript中，“+”不只代表假发，还可以连接两个字符串，例如：<br><code>Mystring = ＂java＂ + ＂script＂;//mystring 的值“javascript”这个字符串</code></p>
-</li>
-</ul>
-</blockquote>
-<h4 id="1-6、自加-自减–"><a href="#1-6、自加-自减–" class="headerlink" title="1.6、自加++, 自减–"></a>1.6、自加++, 自减–</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">解析：</div><div class="line">mynum = <span class="number">10</span>;</div><div class="line">mynum++; //mynum的值变为<span class="number">11</span></div><div class="line">mynum--; //mynum的值又变回<span class="number">10</span></div></pre></td></tr></table></figure>
-<h4 id="1-7、-amp-amp-、-、！"><a href="#1-7、-amp-amp-、-、！" class="headerlink" title="1.7、&amp;&amp;、||、！"></a>1.7、&amp;&amp;、||、！</h4><blockquote>
-<ul>
-<li>1、&amp;&amp;逻辑与操作符<br>b&gt;a &amp;&amp; b&lt;c    //“&amp;&amp;”是并且的意思, 读法”b大于a”并且” b小于c “<br>逻辑与操作符值表：</li>
-</ul>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th>A</th>
-<th>B</th>
-<th style="text-align:center">A&amp;&amp;B</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>真（true）</td>
-<td>真（true）</td>
-<td style="text-align:center">真（true）</td>
-</tr>
-<tr>
-<td>真（true）</td>
-<td>假（false）</td>
-<td style="text-align:center">假（false）</td>
-</tr>
-<tr>
-<td>假（false）</td>
-<td>真（true）</td>
-<td style="text-align:center">假（false）</td>
-</tr>
-<tr>
-<td>假（false）</td>
-<td>假（false）</td>
-<td style="text-align:center">假（false）</td>
-</tr>
-</tbody>
-</table>
-<p><strong>注意:</strong> 如果A为假，A &amp;&amp; B为假，不会在执行B; 反之，如果A为真，要由 B 的值来决定 A &amp;&amp; B 的值。</p>
-<blockquote>
-<ul>
-<li>2、|| 逻辑或操作符，相当于“或者”，当两个条件中有任一个条件满足，逻辑或运算结果就为真。</li>
-</ul>
-</blockquote>
-<p>逻辑或操作符值表：</p>
-<table>
-<thead>
-<tr>
-<th>A</th>
-<th style="text-align:right">B</th>
-<th style="text-align:center">A或B</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>真（true）</td>
-<td style="text-align:right">真（true）</td>
-<td style="text-align:center">真（true）</td>
-</tr>
-<tr>
-<td>真（true）</td>
-<td style="text-align:right">假（false）</td>
-<td style="text-align:center">真（true）</td>
-</tr>
-<tr>
-<td>假（false）</td>
-<td style="text-align:right">真（true）</td>
-<td style="text-align:center">真（true）</td>
-</tr>
-<tr>
-<td>假（false）</td>
-<td style="text-align:right">假（false）</td>
-<td style="text-align:center">假（false）</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<ul>
-<li>3、“！”逻辑非操作符</li>
-</ul>
-</blockquote>
-<p>逻辑非操作符值表：</p>
-<table>
-<thead>
-<tr>
-<th>A</th>
-<th style="text-align:right">！A</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>真（true）</td>
-<td style="text-align:right">假（false）</td>
-</tr>
-<tr>
-<td>假（false）</td>
-<td style="text-align:right">真（true）</td>
-</tr>
-</tbody>
-</table>
-<h4 id="1-8、操作符优先级："><a href="#1-8、操作符优先级：" class="headerlink" title="1.8、操作符优先级："></a>1.8、操作符优先级：</h4><p>操作符之间的优先级（高到低）:<br>算术操作符 → 比较操作符 → 逻辑操作符 → “=”赋值符号<br>若同级的运算是按从左到右次序进行，多层括号有里向外。<br>代码案例：</p>
-<p>语法：<code>var numa = 3;
-var numb = 6;
-jq = numa + 30 &gt; 10 &amp;&amp; munb *3 &lt;2;  //结果为false</code></p>
-<h4 id="1-9、-数组（一起组团）"><a href="#1-9、-数组（一起组团）" class="headerlink" title="1.9、 数组（一起组团）"></a>1.9、 数组（一起组团）</h4><blockquote>
-<p>★ 变量用来存储数据，一个变量只能存储一个内容，一个数组变量可以存放多个数组，好比一个团，团里有很多人。<br>数组是值的集合，每个值都有一个索引号（下标），从0开始，每个所以呢都有一个相应的值，根据需要添加更多的值。数组中每个索引，都有一个相应的值。<br>★ <strong>创建数组</strong>（组团，并给团取个名）<br>使用数组前首先要创建，需要将数组本身赋至一个变量。<br>语法：<code>var myarray = new Array();</code><br>创建数组时，还可以为数组指定长度，长度可任意指定。<br><code>var myarray = new Array(8);  //创建数组，存储8个数据。</code><br><strong>注意：</strong><br>1.创建的新数组是空数组，没有值，如输出，则显示undefined。<br>2.虽然创建数组时，指定了长度，但实际上数组都是变长的，也就是说即使指定了长度为8，仍然可以将元素存储在规定长度以外。<br>★ <strong>数组赋值</strong>（谁是团里的成员）<br>第一步：创建数组var myarr = new Array();<br>第二步：给数组赋值：myarr[1] = “zhang”;<br>                    myarr[2] = “li”;<br>注意：数组每个值有一个索引号（下标），从0开始。<br>还可以用简单的方法创建数组和赋值：<br>①：var myarr = new Array(zhang, li); //创建数组同时赋值<br>②：var myarr = [zhang, li];  //直接输入一个数组（称“字面量数组”）<br>数组存储的数据可以是任何类型（数字、字符、布尔值等）。<br>★ <strong>添加元素：</strong>向数组增加一个新元素（团里添加新成员）<br>添加一个新的索引（下标），任何时刻可以不断上午向数组增加新元素。<br><code>myarr[3] = “wang”; //使用新索引（下标），为数组增加一个新元素。</code><br>★ 使用数组元素（呼叫团里成员）<br>得到一个数组元素的值，秩序引用数组变量并提供一个索引，例：<br>第一个人的姓氏：<code>myarr[0];</code><br>第二个人的姓氏：<code>myarr[1];</code><br>★ 数组属性length（了解团内成员数量）<br>Length属性表示数组的长度，技术组重元素的个数。<br>语法：<code>myarr.length;  //获取数组myarr的长度。</code><br><strong>注意：</strong>因为数组的索引（下标）是从0开始的，所以数组的上下限分别是、；0和length-1。如数组的长度是5，数组的上下限分别是0和4。同时javascript 数组的length 属性是可变的。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">var arr=[<span class="number">55</span>,<span class="number">32</span>,<span class="number">5</span>,<span class="number">90</span>,<span class="number">60</span>,<span class="number">98</span>,<span class="number">76</span>,<span class="number">54</span>];//包含<span class="number">8</span>个数值的数组arr </div><div class="line">document.write(arr.length); //显示数组长度<span class="number">8</span></div><div class="line">document.write(arr[<span class="number">7</span>]); //显示第<span class="number">8</span>个元素的值<span class="number">54</span></div><div class="line"></div><div class="line">arr.length=<span class="number">10</span>; //增大数组的长度</div><div class="line">document.write(arr.length); //数组长度已经变为<span class="number">10</span></div></pre></td></tr></table></figure></p>
-</blockquote>
-<p>数组随元素的增加，长度也会改变，如下:<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var arr=[<span class="number">98</span>,<span class="number">76</span>,<span class="number">54</span>,<span class="number">56</span>,<span class="number">76</span>]; // 包含<span class="number">5</span>个数值的数组</div><div class="line">document.write(arr.length); //显示数组的长度<span class="number">5</span></div><div class="line">arr[<span class="number">15</span>]=<span class="number">34</span>;  //增加元素，使用索引为<span class="number">15</span>,赋值为<span class="number">34</span></div><div class="line">alert(arr.length); //显示数组的长度<span class="number">16</span></div></pre></td></tr></table></figure></p>
-<blockquote>
-<p>★二维数组：<br>一维数组可以看成一组盒子，每个盒子只能存放一个内容。<br>一维数组表示：myarray[ ];<br>二维数组，可以看做一组盒子，但每个盒子里还可以放多个盒子。<br>二维数组表示：myarray[ ] [ ];<br>注意: 二维数组的两个维度的索引值也是从0开始，两个维度的最后一个索引值为长度-1。<br>1、    二维数组的定义方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">var myarr=new Array();  //先声明一维 </div><div class="line"><span class="keyword">for</span>(var i=<span class="number">0</span>;i&lt;<span class="number">2</span>;i++)&#123;   //一维长度为<span class="number">2</span></div><div class="line">   myarr[i]=new Array();  //再声明二维 </div><div class="line">   <span class="keyword">for</span>(var j=<span class="number">0</span>;j&lt;<span class="number">3</span>;j++)&#123;   //二维长度为<span class="number">3</span></div><div class="line">     myarr[i][j]=i+j;   // 赋值，每个数组元素的值为i+j</div><div class="line">&#125;</div><div class="line"> &#125;</div></pre></td></tr></table></figure></p>
-</blockquote>
-<p>将上面的二位数组，用表格的方式表示：</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>0</th>
-<th>1</th>
-<th>2</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>myarr[0][0]值：0</td>
-<td>myarr[0][1]值：1</td>
-<td>myarr[0][2]值：2</td>
-</tr>
-<tr>
-<td>1</td>
-<td>myarr[1][0]值：1</td>
-<td>myarr[1][1]值：1</td>
-<td>myarr[1][2]值：3</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p>2、    二维数组的定义方法二：<br><code>var Myarr = [[1,2,3],[1,2,3]];</code><br>3、    赋值：<br><code>myarr[0][1] = 5;</code>   //将5的值传入到数组中，覆盖原有值。<br>说明：myarr[0][1],0表示表的行，1表示表的列。</p>
-</blockquote>
-<p><strong>任务</strong><br>试一试，创建二维数组(一维长度3，二维长度6)，值为一维数组和二维数组索引值的积，如myarr[2][5]=2*5。<br>在右边编辑器的script标签内，创建该二维数组。<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE HTML&gt;</div><div class="line">&lt;html&gt;</div><div class="line">&lt;head&gt;</div><div class="line">&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;</div><div class="line">&lt;title&gt;二维数组&lt;/title&gt;</div><div class="line">&lt;script type="text/javascript"&gt;</div><div class="line"> var myarr = new Array();</div><div class="line"> for(var i = 0; i &lt; 3; i++) &#123;</div><div class="line">    myarr[i] = neew Array();</div><div class="line">    for(var j = 0; j &lt; 6; j++) &#123;</div><div class="line">        myarr[i][j] = i*j;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">&lt;/script&gt;</div><div class="line">&lt;/head&gt;</div><div class="line"></div><div class="line">&lt;body&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure></p>
-<p><strong>编程练习</strong><br>使用Javascript语言，把以下数组<br> <code>var  arr = [&#39;*&#39;,&#39;##&#39;,&quot;***&quot;,&quot;&amp;&amp;&quot;,&quot;****&quot;,&quot;##*&quot;];
-   arr[7] = &quot;**&quot;;</code><br>在页面显示如下图所示的图案：<br><code>*</code><br><code>**</code><br><code>***</code><br><code>****</code><br>第一步：定义一个数组，存储要展示的图形。<br>提示:<br> <code>var  arr = [&#39;*&#39;,&#39;##&#39;,&quot;***&quot;,&quot;&amp;&amp;&quot;,&quot;****&quot;,&quot;##*&quot;];
-   arr[7] = &quot;**&quot;;</code><br>第二步：预想一下arr 数组的长度是多少？<br>提示: 使用alert弹出数组的长度，看看是否跟自己的答案一样。<br>第三步：将数组内容输出，完成达到的效果。<br> 提示: 想在不同行显示不同数组内容，别忘记<br>换行标签。<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html lang="en"&gt;</div><div class="line">&lt;head&gt;</div><div class="line">	&lt;meta charset="UTF-8"&gt;</div><div class="line">	&lt;title&gt;Document&lt;/title&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line">&lt;script type="text/javascript"&gt;</div><div class="line"> //创建数组</div><div class="line">  var arr = ['*','##','***','&amp;&amp;','****','##*'];</div><div class="line">  arr[7] = "**";</div><div class="line"> //显示数组长度</div><div class="line">  alert("数组的长度是：" + arr.length);</div><div class="line"> </div><div class="line"> //将数组内容输出，完成达到的效果。</div><div class="line">  document.write(arr[0] + "&lt;br/&gt;");</div><div class="line">  document.write(arr[7] + "&lt;br/&gt;");</div><div class="line">  document.write(arr[2] + "&lt;br/&gt;");</div><div class="line">  document.write(arr[4]);</div><div class="line"></div><div class="line">&lt;/script&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure></p>
-<h4 id="作者：guaibaobao"><a href="#作者：guaibaobao" class="headerlink" title="作者：guaibaobao"></a>作者：guaibaobao</h4><h4 id="时间：2016-11-15"><a href="#时间：2016-11-15" class="headerlink" title="时间：2016-11-15"></a>时间：2016-11-15</h4><h4 id="资料来源：慕课网"><a href="#资料来源：慕课网" class="headerlink" title="资料来源：慕课网"></a>资料来源：慕课网</h4>
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
       <a href="/blog/2016/11/13/javaScript版块/" title="javaScript版块" itemprop="url">javaScript版块</a>
   </h1>
   <p class="article-author">By
@@ -1164,6 +870,77 @@ prefix=D:\Develop\nvm\npm（将工具安装到哪）
 <h2 id="三、分布式和集群？（后台构架知识）"><a href="#三、分布式和集群？（后台构架知识）" class="headerlink" title="三、分布式和集群？（后台构架知识）"></a>三、分布式和集群？（后台构架知识）</h2><p>1.分布式：一个业务分拆多个子业务，部署在不同的服务器上（比如腾讯QQ是一个总体业务，它可以分出想聊天、视频等等子业务，把这些子业务放在了不同的服务器上，所以每个服务器的业务都不同。来便于维护和管理）<br>2.集群：同一个业务，部署在多个服务器上（比如腾讯QQ的聊天业务，不可能只凡在一个服务器上，否则用户那么多，它自己吃不消，他又将该业务部署在了不同的服务器上，而这些服务器实现的业务都是聊天。缓和服务器压力）</p>
 <h2 id="四、gulp与grunt"><a href="#四、gulp与grunt" class="headerlink" title="四、gulp与grunt?"></a>四、gulp与grunt?</h2><p>1.gulp的语法比grunt语法简洁，用gulp官网的话说，这个叫做“代码优于配置”<br>2.gulp构建项目的时间速度快，通过利用Node.js强大的流，不需要往磁盘写中间文件，可以更快地完成构建。</p>
 <h2 id="五、gulp与webpack"><a href="#五、gulp与webpack" class="headerlink" title="五、gulp与webpack?"></a>五、gulp与webpack?</h2><p>webpack的有点：<br> 1.不用考虑资源位置， webpack 给你做了。<br> 2.不用考虑资源加载方式，异步同步改一下写法就行， webpack 也给你做了。<br> 3.不用考虑 common 资源的整理， webpack 有个 CommonsChunkPlugin 能做。<br>备注：在 webpack 里，你只需要 require 就行了，依赖关系 webpack 帮你处理。而在 gulp 里，你还是需要把所有的 js 或者其他依赖文件用 gulp.src 弄起来。</p>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/blog/2016/10/15/React小结/" title="React小结" itemprop="url">React小结</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/blog/about" title="baobao" target="_blank" itemprop="author">baobao</a>
+		
+  <p class="article-time">
+    <time datetime="2016-10-15T15:12:01.000Z" itemprop="datePublished"> 发表于 2016-10-15</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <h1 id="React"><a href="#React" class="headerlink" title="React"></a>React</h1><p>谈谈自己对React的浅了解，大致阅读了一些关于React的文章，来总结点笔记留给以后的自己。</p>
+<ul>
+<li>React是facebook开源的一个用于构建用户界面的javascript库，应用时总从UI出发</li>
+<li>顺应了web开发组件化的趋势</li>
+<li>专注于MVC架构中的V视图。（React会自动处理所有用户页面更新）</li>
+</ul>
+<p>节点小热身:</p>
+<ul>
+<li>React是为了解决：构建随着时间数据不断变化的大规模应用程序。</li>
+<li><p>为什么要用虚拟DOM？</p>
+<p>答：因为在用js操作DOM的过程中效率非常低（Js对虚拟DOM操作是对DOM进行操作和之    前的虚拟DOM对象进行比较形成新的虚拟DOM）</p>
+</li>
+</ul>
+<p>React的[安装] 和 [语法] </p>
+<h3 id="1-在之前安装的Webpack的基础上，在原来文件中打开命令窗口"><a href="#1-在之前安装的Webpack的基础上，在原来文件中打开命令窗口" class="headerlink" title="1.在之前安装的Webpack的基础上，在原来文件中打开命令窗口"></a>1.在之前安装的Webpack的基础上，在原来文件中打开命令窗口</h3><p>输入指令npm install  –save-dev   react;</p>
+<p>  npm install –save-dev  react-dom</p>
+<h3 id="2-在publish文件下：创建一个index-html并编辑其内容为："><a href="#2-在publish文件下：创建一个index-html并编辑其内容为：" class="headerlink" title="2.在publish文件下：创建一个index.html并编辑其内容为："></a>2.在publish文件下：创建一个index.html并编辑其内容为：</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;script  <span class="built_in">type</span>=<span class="string">"text/javascript"</span> src=<span class="string">"node-module/dist/react.min.js"</span>&gt;&lt;/scrpt&gt;</div><div class="line">        &lt;script  <span class="built_in">type</span>=<span class="string">"text/javascript"</span> src=<span class="string">"node-module/dist/react-dom.min.js"</span>&gt;&lt;/scrpt&gt;</div><div class="line">        &lt;script  <span class="built_in">type</span>=<span class="string">"text/javascript"</span> src=<span class="string">"https://unpkg.com/babel-core@5.8.38/browser.min.js"</span>&gt;&lt;/scrpt&gt;（这个网址是在线解析的引用）</div><div class="line">         &lt;script  <span class="built_in">type</span>=<span class="string">"text/babel"</span>&gt;</div><div class="line">                 ReactDOM.render(</div><div class="line">                            &lt;div&gt;Hello World&lt;/div&gt;,</div><div class="line">                            document.getElementById(<span class="string">"demo"</span>)</div><div class="line">                  ); </div><div class="line">         &lt;/scrpt&gt;</div><div class="line">   说明：render中的第一个参数是：组件名，第二个参数是：DOM容器。</div></pre></td></tr></table></figure>
+<p>创建组件时：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&lt;script  <span class="built_in">type</span>=<span class="string">"text/babel"</span>&gt;</div><div class="line">                         class Hello extends React.Component&#123;</div><div class="line">                                   <span class="function"><span class="title">render</span></span>( )&#123;</div><div class="line">                                             <span class="built_in">return</span> &lt;div&gt;Hello World&lt;/div&gt;;</div><div class="line">                                   &#125;</div><div class="line">                         &#125;</div><div class="line">               ReactDOM.render(</div><div class="line">                         &lt;Hello/&gt;,//自闭合标签</div><div class="line">                         document.getElementById(<span class="string">"demo"</span>)</div><div class="line">               );</div><div class="line">          &lt;/script&gt;</div></pre></td></tr></table></figure>
+<p>jsx的语法规则：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">  在src目录下的js文件下的component文件下创建World.jsx文件并编辑为：</div><div class="line">    import React from <span class="string">"react"</span>;</div><div class="line">     import ReactDOM from <span class="string">"react-dom"</span>;</div><div class="line">     <span class="built_in">export</span> default class Hello extends React.Component&#123;</div><div class="line">    <span class="function"><span class="title">render</span></span>()&#123;</div><div class="line">            <span class="built_in">return</span> &lt;div&gt;World&lt;/div&gt;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">在app.js中写入：</div><div class="line">import React from <span class="string">"react"</span>;</div><div class="line">import ReactDOM from <span class="string">"react-dom"</span>;</div><div class="line">import Hello from <span class="string">'./src/js/component/World.jsx'</span></div><div class="line">ReactDOM.render(</div><div class="line">        &lt;Hello/&gt;,</div><div class="line">        document.getElementById(<span class="string">"dukewei"</span>)</div><div class="line">    )</div><div class="line">   最后在命令窗口输入：npm run develop</div></pre></td></tr></table></figure></p>
+<p>组件的生命周期（状态回调）：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div></pre></td><td class="code"><pre><div class="line">在component目录下建个YaPing文件夹再其下建YaPing.jsx并写入：</div><div class="line">                                       import React from <span class="string">'react'</span>;</div><div class="line"><span class="built_in">let</span> initValue = <span class="string">'幸运女生。。。'</span>;</div><div class="line"><span class="built_in">export</span> default class YaPing extends React.Component&#123;</div><div class="line">    <span class="function"><span class="title">getInitDefaultProps</span></span>()&#123;</div><div class="line">            console.log(<span class="string">"123123"</span>);</div><div class="line">    &#125;</div><div class="line">    <span class="function"><span class="title">getInitState</span></span>()&#123;</div><div class="line">            console.log(<span class="string">"456456"</span>);</div><div class="line">    &#125;</div><div class="line">    <span class="function"><span class="title">componentWillMount</span></span>() &#123;</div><div class="line">        console.log(<span class="string">'即将开始美丽的童话。。。'</span>);</div><div class="line">    &#125;</div><div class="line">    <span class="function"><span class="title">componentDidMount</span></span>() &#123;</div><div class="line">        console.log(<span class="string">'童话世界里的公主。。。'</span>);  </div><div class="line">    &#125;</div><div class="line">    shouldComponentUpdate(nextProps,nextState)&#123;</div><div class="line">        initValue:<span class="string">"童话里都是骗人的。。。"</span>;</div><div class="line">        console.log(<span class="string">"你不可能是我的王子！！！"</span>);</div><div class="line">        <span class="built_in">return</span> <span class="literal">true</span>;</div><div class="line">    &#125;</div><div class="line">    myClick = () =&gt;&#123;</div><div class="line">        this.setState(&#123;happy:<span class="string">"meet you..."</span>&#125;);</div><div class="line">        console.log(<span class="string">'遇见最美的你'</span>);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="title">render</span></span>()&#123;</div><div class="line">        <span class="built_in">return</span> &lt;p&gt;&lt;span onClick=&#123;this.myClick&#125;&gt;&#123;initValue&#125;&lt;/span&gt;&lt;/p&gt;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;;</div><div class="line">编辑app.js:</div><div class="line"></div><div class="line">                                                  import React from <span class="string">"react"</span>;</div><div class="line">import ReactDOM from <span class="string">"react-dom"</span>;</div><div class="line">import YaPing from <span class="string">'./src/js/component/YaPing/YaPing.jsx'</span>;</div><div class="line">ReactDOM.render(</div><div class="line">        &lt;div&gt;&lt;YaPing/&gt;&lt;/div&gt;,</div><div class="line">        document.getElementById(<span class="string">"dukewei"</span>)</div><div class="line">);</div><div class="line">最后在命令窗口输入：npm run develop</div></pre></td></tr></table></figure></p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">以上纯属个人见解,仅供参考。。。</div></pre></td></tr></table></figure>
 
         
         
